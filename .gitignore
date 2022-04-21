@@ -1,0 +1,95 @@
+##
+# General
+##
+
+# Vendors and dependencies
+bower_components/
+node_modules/
+.grunt/
+
+# Linux
+*~
+*.swp
+.Trash-*
+
+# MacOS files
+__MACOSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+/.settings
+/.buildpath
+/.project
+/nbproject
+
+# SublimeText
+*.sublime-workspace
+*.sublime-project
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Thumbnails
+._*
+
+# Cache and backup
+*.bak
+*.cache
+.sass-cache
+
+##
+# WordPress
+##
+
+# Sample files
+/www/wp-config-sample.php
+
+# Local configuration
+/www/wp-config-local.php
+
+# Robots and sitemap
+/www/robots.txt
+/www/*sitemap.xml
+
+## For security, never let files that allow to guess WordPress or plugins version
+# WordPress readme/license files
+/www/license.txt
+/www/readme.html
+
+# Changelog for plugins
+/www/wp-content/plugins/**/CHANGELOG
+/www/wp-content/plugins/**/CHANGELOG.md
+/www/wp-content/plugins/**/changelog.md
+/www/wp-content/plugins/**/CHANGELOG.txt
+/www/wp-content/plugins/**/changelog.txt
+/www/wp-content/plugins/**/CHANGES
+/www/wp-content/plugins/**/CHANGES.md
+/www/wp-content/plugins/**/changes.md
+/www/wp-content/plugins/**/CHANGES.txt
+/www/wp-content/plugins/**/changes.txt
+
+# License for plugins
+/www/wp-content/plugins/**/LICENSE
+/www/wp-content/plugins/**/LICENSE.md
+/www/wp-content/plugins/**/license.md
+/www/wp-content/plugins/**/LICENSE.txt
+/www/wp-content/plugins/**/license.txt
+
+# Readme for plugins
+/www/wp-content/plugins/**/README
+/www/wp-content/plugins/**/README.md
+/www/wp-content/plugins/**/readme.md
+/www/wp-content/plugins/**/README.txt
+/www/wp-content/plugins/**/readme.txt
+
+##
+# W3 Total cache
+##
+/www/wp-content/cache/*
+!/www/wp-content/cache/index.html
+/www/wp-content/w3tc-config/
+!/www/wp-content/w3tc-config/index.html

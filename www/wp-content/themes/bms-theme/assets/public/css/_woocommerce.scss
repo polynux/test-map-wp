@@ -1,0 +1,155 @@
+.woocommerce-page {
+	.checkbox {
+	    cursor: pointer;
+	}
+	.col-1, .col-2{ max-width:none;}
+	.col2-set {
+		.col-1 { padding-left: 0px; }
+		.col-2 { padding-right: 0px; }
+	}
+	.form-row {
+		label {
+		    display: block;
+		    width: 100%;
+		    margin-bottom: 0px;
+		}
+		.woocommerce-input-wrapper {
+		    width: 100%;
+		}
+		input, select, textarea {
+			display: block;
+		}
+		.input-text, input[type=email],
+		input[type=password], input[type=search],
+		input[type=tel], input[type=text], input[type=url], textarea {
+		    padding: .6180469716em;
+		    background-color: #f2f2f2;
+		    color: #43454b;
+		    outline: 0;
+		    border: 0;
+		    -webkit-appearance: none;
+		    box-sizing: border-box;
+		    font-weight: 400;
+		}
+		&.woocommerce-invalid,
+		&.woocommerce-invalid-required-field {
+			input {
+			    box-shadow: inset 2px 0 0 #e2401c;
+			}
+		}
+		&.woocommerce-validated {
+			input {
+			    box-shadow: inset 2px 0 0 #e7a40f;
+			}
+		}
+	}
+	.form-row-wide {
+	    clear: both;
+	    width: 100%;
+	}
+	.woocommerce-terms-and-conditions-wrapper {
+	    display: block;
+	    width: 100%;
+	}
+	.woocommerce-notices-wrapper, 
+	.woocommerce-form-coupon-toggle,
+	.woocommerce-NoticeGroup {
+		ul, div {
+			border-top: 0px;
+		    background-color: #3D9CD2;
+		    color: #ffffff;
+		    margin-bottom: 2.617924em;
+		    margin-left: 0;
+		    border-radius: 0px;
+		    color: #fff;
+		    clear: both;
+		    border-left: 5px solid rgba(0,0,0,.15);
+		    a {
+		    	color: inherit;
+		    }
+		    &.woocommerce-error {
+		    	border-left: 5px solid #b81c23;
+		    	background-color: #f7f6f7;
+		    	color: #515151;
+		    	li {
+			    	margin-left: 25px !important;
+		    	}
+		    }
+		    &.woocommerce-info {
+		    	border-left: 5px solid rgba(0,0,0,.15);
+		    	&:before {
+		    		color: #fff;
+		    	}
+		    }
+		}
+		.woocommerce-message {
+			border-top: 0px;
+		    margin-bottom: 2.617924em;
+		    margin-left: 0;
+		    border-radius: 0px;
+		    clear: both;
+		    border-left: 5px solid #8fae1b;
+		    background-color: #f7f6f7;
+			color: #515151;
+		    a {
+		    	color: inherit;
+		    }
+		}
+	}
+	input#coupon_code {
+	    min-width: 120px;
+	}
+	
+	.product {
+		a {
+			&.woocommerce-LoopProduct-link {
+				color: inherit;
+			}
+		}
+	}
+	
+	.single-product {
+		.product {
+			div.images {
+				.flex-control-thumbs {
+				    padding-top: 15px;
+				}
+			}
+		}	
+	}	
+	
+	&.woocommerce-cart {
+		.product-name {
+			a {
+				color: inherit;
+			}
+		}
+	}
+}
+
+
+.select2-container--default {
+	.select2-selection--single {
+	    border-radius: 0px;
+	    border: none;
+	    background-color: #f2f2f2;
+	    color: #43454b;
+		padding: .4em;
+	    height: auto;
+	    .select2-selection__arrow {
+	        height: 100%
+	    }
+	    .select2-selection__rendered {	
+			background-color: #f2f2f2;
+		    color: #43454b;
+	        padding-left: 3px;
+		}
+	}
+	.select2-dropdown {
+		border-color : #f2f2f2;
+		box-shadow : 1px 5px 5px #f2f2f2cc;
+		.select2-search__field {
+			border-color : #f2f2f2;
+		}
+	}
+}

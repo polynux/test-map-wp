@@ -1,0 +1,40 @@
+#bms_admin #image-preview {
+    max-width: 150px !important;
+    /*padding: 0px 15px;*/
+}
+
+#bms_admin .form-table th {
+	max-width: 50px;
+	width: auto;
+}
+#bms_admin .form-table td, #bms_admin .form-table th {
+	padding: 5px 10px;
+    vertical-align: middle;
+}
+.wp-admin #wpfooter:before {
+	content: "";
+    background-image: url(/wp-content/themes/bms-theme/assets/images/bm-logo-gradient.png);
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#wpcontent {
+    padding-bottom: 30px;
+}
+.updated.promotion.fs-notice.fs-sticky.fs-has-title {
+    display: none !important;
+}
+.updated.msp-notice-wrapper.msp-banner-wrapper {
+    display: none;
+}
+.attachment-preview img[src*='.svg'],
+.upload-php img[src*='.svg'] {
+    width: 50%;
+    height: auto;
+}
+#upload_image_button {
+    transform: translateY(50%);
+}
