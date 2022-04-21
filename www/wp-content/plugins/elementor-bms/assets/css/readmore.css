@@ -1,0 +1,22 @@
+.bms-archive-description .bms-category-readmore {
+  transform-origin: top;
+  transform: scaleY(0);
+  display: block;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+  height: auto;
+  max-height: 0px;
+}
+
+.bms-archive-description .bms-category-readmore.show {
+  transform: scaleY(1);
+  opacity: 1;
+  max-height: 300px;
+}
+
+.bms-category-readmore-btn {
+  text-decoration: underline;
+  color: #1d1d1d;
+  cursor: pointer;
+}

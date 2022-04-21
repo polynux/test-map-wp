@@ -1,0 +1,13 @@
+.bms-bloglist-facets {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 30px;
+
+  .bms-bloglist-facet {
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

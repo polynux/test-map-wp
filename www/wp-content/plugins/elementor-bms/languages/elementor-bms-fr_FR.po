@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: elementor-bms\n"
+"POT-Creation-Date: 2022-08-22 09:25+0200\n"
+"PO-Revision-Date: 2022-08-22 09:25+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: dynamic-tags/readmore.php:69
+msgid "Description de l'archive (Lire plus)"
+msgstr ""
+
+#: widgets/breadcumb.php:66
+msgid "Bms Breadcrumbs"
+msgstr "Fil d'ariane - BMS"
+
+#: widgets/breadcumb.php:124
+msgid "Content"
+msgstr "Contenu"
+
+#: widgets/breadcumb.php:131
+msgid "Label Accueil"
+msgstr ""
+
+#: widgets/breadcumb.php:133
+msgid "Accueil"
+msgstr ""
+
+#: widgets/breadcumb.php:140
+msgid "Délimiteur"
+msgstr ""
+
+#: widgets/breadcumb.php:152
+#, fuzzy
+#| msgid "Alignment"
+msgid "Alignement"
+msgstr "Alignement"
+
+#: widgets/breadcumb.php:156
+msgid "Gauche"
+msgstr ""
+
+#: widgets/breadcumb.php:160
+msgid "Centré"
+msgstr ""
+
+#: widgets/breadcumb.php:164
+msgid "Droite"
+msgstr ""
+
+#: widgets/breadcumb.php:179
+msgid "Style"
+msgstr ""
+
+#: widgets/breadcumb.php:187
+msgid "Taille"
+msgstr ""
+
+#: widgets/breadcumb.php:209
+msgid "Couleur du délimiteur"
+msgstr ""
+
+#: widgets/breadcumb.php:224
+msgid "Couleur de la page courante"
+msgstr ""
+
+#: widgets/breadcumb.php:241
+msgid "Normal"
+msgstr ""
+
+#: widgets/breadcumb.php:248
+msgid "Couleur de lien"
+msgstr ""
+
+#: widgets/breadcumb.php:265
+msgid "Survol"
+msgstr ""
+
+#: widgets/breadcumb.php:272
+msgid "Couleur de lien (survol)"
+msgstr ""
+
+#: widgets/breadcumb.php:493
+msgid "Page"
+msgstr ""
