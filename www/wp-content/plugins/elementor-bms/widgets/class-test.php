@@ -42,6 +42,9 @@ class Test extends Widget_Base
 		wp_register_script('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.js");
 		wp_register_style('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.css");
 		wp_register_style('fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+		wp_register_style('leaflet-markercluster', plugins_url('/assets/js/dist/MarkerCluster.css', ELEMENTOR_BMS));
+		wp_register_style('leaflet-markercluster-default', plugins_url('/assets/js/dist/MarkerCluster.Default.css', ELEMENTOR_BMS));
+		wp_register_script('leaflet-markercluster', plugins_url('/assets/js/dist/leaflet.markercluster.js', ELEMENTOR_BMS));
 	}
 
 	/**
@@ -124,7 +127,7 @@ class Test extends Widget_Base
 	 */
 	public function get_style_depends()
 	{
-		return array(['fontawesome', 'test', 'leaflet']);
+		return array(['fontawesome', 'test', 'leaflet', 'leaflet-markercluster', 'leaflet-markercluster-default']);
 	}
 
 	/**
@@ -132,7 +135,7 @@ class Test extends Widget_Base
 	 */
 	public function get_script_depends()
 	{
-		return array(['leaflet', 'leaflet-conditionalLayer', 'test']);
+		return array(['leaflet', 'leaflet-markercluster', 'test']);
 	}
 
 	/**
@@ -183,7 +186,8 @@ class Test extends Widget_Base
 	{
 
 		$settings = $this->get_settings_for_display();
-		$pointsUrl = "./wp-content/plugins/elementor-bms/assets/js/points-short.json";
+		// $pointsUrl = "./wp-content/plugins/elementor-bms/assets/js/points-short.json";
+		$pointsUrl = "./wp-content/plugins/elementor-bms/assets/js/points-all.json";
 
 		echo '<div id="map" data-points="' . $pointsUrl . '"></div>';
 	}

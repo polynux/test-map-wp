@@ -1,9 +1,9 @@
 // L'id du container, par exemple <div id="map"></div>
-var mapID = "map";
+const mapID = "map";
 
 let mapAttrib = 'Données cartographiques &copy; <a href="https://geoservices.ign.fr/">Géoservices</a>';
 // Plan IGN avec une transparence de 50%
-var PlanIGN = L.tileLayer(
+const PlanIGN = L.tileLayer(
     "https://wxs.ign.fr/{ignApiKey}/geoportail/wmts?" +
         "&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM" +
         "&LAYER={ignLayer}&STYLE={style}&FORMAT={format}" +
@@ -19,7 +19,7 @@ var PlanIGN = L.tileLayer(
 );
 
 // Photographies aériennes en-dessous de Plan IGN
-var OrthoIGN = L.tileLayer(
+const OrthoIGN = L.tileLayer(
     "https://wxs.ign.fr/{ignApiKey}/geoportail/wmts?" +
         "&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM" +
         "&LAYER={ignLayer}&STYLE={style}&FORMAT={format}" +
@@ -55,7 +55,6 @@ function createPopup({ title, text, image, link }) {
         imgDiv = `<img src="${image.link}" alt="${title}" class="map-popup-image">`;
     }
     let titleDiv = `<a href="${link}" class="map-popup-title">${title}</a>`;
-    // let textDiv = `<p class="map-popup-text">${text}</p>`;
     let popup = `<div class="map-popup-container">
         ${imgDiv}
         ${titleDiv}
@@ -64,8 +63,14 @@ function createPopup({ title, text, image, link }) {
     return popup;
 }
 
+let pointSort = (a, b) => {
+    return map.distance(a.getLatLng(), b.getLatLng());
+};
+
+let testMarkers;
+
 async function markersInit() {
-    let markers = L.layerGroup();
+    let markers = L.markerClusterGroup();
     let points = await loadJSON(pointUrl);
 
     points.forEach(point => {
@@ -85,6 +90,9 @@ async function markersInit() {
             );
     });
 
+    console.log(markers);
+    testMarkers = markers;
+
     return markers;
 }
 
@@ -93,17 +101,15 @@ async function mapInit() {
     let map = L.map(mapID, {
         center: [44.135, 3.8389],
         zoom: 9,
-        layers: [PlanIGN]
+        layers: [PlanIGN, markers]
     });
-
-    var conditionalLayer = L.conditionalMarkers(markers.getLayers(), { maxMarkers: 2 }).addTo(map);
 
     let baseMaps = {
         Map: PlanIGN,
         Photos: OrthoIGN
     };
     let overlayMaps = {
-        '<i class="fa-solid fa-house"></i> Points': conditionalLayer
+        '<i class="fa-solid fa-house"></i> Points': markers
     };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
 
@@ -113,14 +119,10 @@ async function mapInit() {
 async function addMapControl() {
     let map = await mapInit();
 
-    polyline.addTo(map);
+    // polyline.addTo(map);
     L.control.scale().addTo(map);
 
-    function onMapClick(e) {
-        console.log(e);
-    }
-
-    map.on("click", onMapClick);
+    map.on("click", console.log);
 }
 
 addMapControl();
