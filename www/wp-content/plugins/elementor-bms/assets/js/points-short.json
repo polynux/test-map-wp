@@ -1,0 +1,1056 @@
+[
+	{
+		"types_id": [
+			"1d52c9e9-c493-11e7-962c-020000fa5665"
+		],
+		"id": "009afc54-db55-11e7-ba19-020000fa5665",
+		"latitude": 44.433723999999998,
+		"longitude": 3.593785,
+		"name": "Croix Paronnette avant La Fage",
+		"description": "<p></p>\n",
+		"medias": [],
+		"custom_fields": [
+			{
+				"id": "00dbd8da-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Site Internet",
+				"tag": "site_internet"
+			},
+			{
+				"id": "08f0a546-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil PMR",
+				"tag": "accueil_PMR"
+			},
+			{
+				"id": "159e8525-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Réseaux sociaux",
+				"tag": "reseaux_sociaux"
+			},
+			{
+				"id": "1cdcbcd9-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil ânes/chevaux",
+				"tag": "accueil_chevaux"
+			},
+			{
+				"id": "2671149b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nom responsable",
+				"tag": "nom_responsable"
+			},
+			{
+				"id": "2f7c98f4-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accès WIFI gratuit",
+				"tag": "acces_wifi"
+			},
+			{
+				"id": "3820a826-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Responsable",
+				"tag": "adresse_responsable"
+			},
+			{
+				"id": "42ca8c4b-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Moyens de paiement acceptés",
+				"tag": "moyens_paiement"
+			},
+			{
+				"id": "4a4bc01f-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone (fixe/mobile) Responsable",
+				"tag": "tel_responsable"
+			},
+			{
+				"id": "55efc471-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Responsable",
+				"tag": "email_responsable"
+			},
+			{
+				"id": "5f3f9b28-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Possibilités de bivouaquer",
+				"tag": "bivouac"
+			},
+			{
+				"id": "6f2162f6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil vélos",
+				"tag": "accueil_velos"
+			},
+			{
+				"id": "7214b41c-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Capacité d'accueil totale",
+				"tag": "capacite_accueil_totale"
+			},
+			{
+				"id": "7cd50790-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Préparation pique-nique",
+				"tag": "piquenique"
+			},
+			{
+				"id": "7de25fab-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 90",
+				"tag": "lits_90"
+			},
+			{
+				"id": "88346329-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 140",
+				"tag": "lits_140"
+			},
+			{
+				"id": "8ee7f28b-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone Structure",
+				"tag": "tel_structure"
+			},
+			{
+				"id": "8f9ba1fe-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité point d'eau",
+				"tag": "eau"
+			},
+			{
+				"id": "9145ff9e-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Dates d'ouverture",
+				"tag": "dates_ouverture"
+			},
+			{
+				"id": "999cc305-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité toilettes publiques",
+				"tag": "toilettes"
+			},
+			{
+				"id": "9b473615-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Tarifs pratiqués",
+				"tag": "tarifs"
+			},
+			{
+				"id": "a7125719-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité DAB",
+				"tag": "DAB"
+			},
+			{
+				"id": "a952074a-c486-11e7-962c-020000fa5665",
+				"value": "---",
+				"title": "Kilomètre",
+				"tag": "kilometer"
+			},
+			{
+				"id": "af4520db-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité commerces",
+				"tag": "commerces"
+			},
+			{
+				"id": "bc7670e6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nombre de randonneurs passés dans l'année",
+				"tag": "nbre_randonneurs"
+			},
+			{
+				"id": "bff7454b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Description de l'hébergement",
+				"tag": "description_hébergement"
+			},
+			{
+				"id": "cc91ecc6-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Raison sociale structure",
+				"tag": "nom_structure"
+			},
+			{
+				"id": "e49b12ad-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Structure",
+				"tag": "adresse_structure"
+			},
+			{
+				"id": "f492c8c8-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Structure",
+				"tag": "email_structure"
+			},
+			{
+				"id": "f658b608-260a-11e8-92c1-020000fa5665",
+				"value": "0",
+				"title": "Actif (1 = actif; 0 ou vide = inactif)",
+				"tag": "actif"
+			},
+			{
+				"id": "fc4f18a4-c30d-11e7-962c-020000fa5665",
+				"value": "1211 m",
+				"title": "Altitude",
+				"tag": "altitude"
+			}
+		],
+		"comments": [],
+		"created_at": 1512654378,
+		"updated_at": 1585562351,
+		"deleted_at": null,
+		"is_favorite": false,
+		"visible": true,
+		"tag": null
+	},
+	{
+		"types_id": [
+			"1d52c9e9-c493-11e7-962c-020000fa5665"
+		],
+		"id": "00c22e90-e6cb-11e9-bb51-02000072878d",
+		"latitude": 44.135041778670001,
+		"longitude": 3.8389741985419001,
+		"name": "Col St Pierre",
+		"description": "<p>A votre disposition un abri pour une halte.</p>\n<p>Possiblité de monter au Signal St Pierre (table d'orientation)</p>\n<p>A partir de ce point vous entrez dans le Gard (borne ancienne)</p>\n",
+		"medias": [],
+		"custom_fields": [
+			{
+				"id": "00dbd8da-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Site Internet",
+				"tag": "site_internet"
+			},
+			{
+				"id": "08f0a546-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil PMR",
+				"tag": "accueil_PMR"
+			},
+			{
+				"id": "159e8525-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Réseaux sociaux",
+				"tag": "reseaux_sociaux"
+			},
+			{
+				"id": "1cdcbcd9-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil ânes/chevaux",
+				"tag": "accueil_chevaux"
+			},
+			{
+				"id": "2671149b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nom responsable",
+				"tag": "nom_responsable"
+			},
+			{
+				"id": "2f7c98f4-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accès WIFI gratuit",
+				"tag": "acces_wifi"
+			},
+			{
+				"id": "3820a826-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Responsable",
+				"tag": "adresse_responsable"
+			},
+			{
+				"id": "42ca8c4b-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Moyens de paiement acceptés",
+				"tag": "moyens_paiement"
+			},
+			{
+				"id": "4a4bc01f-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone (fixe/mobile) Responsable",
+				"tag": "tel_responsable"
+			},
+			{
+				"id": "55efc471-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Responsable",
+				"tag": "email_responsable"
+			},
+			{
+				"id": "5f3f9b28-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Possibilités de bivouaquer",
+				"tag": "bivouac"
+			},
+			{
+				"id": "6f2162f6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil vélos",
+				"tag": "accueil_velos"
+			},
+			{
+				"id": "7214b41c-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Capacité d'accueil totale",
+				"tag": "capacite_accueil_totale"
+			},
+			{
+				"id": "7cd50790-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Préparation pique-nique",
+				"tag": "piquenique"
+			},
+			{
+				"id": "7de25fab-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 90",
+				"tag": "lits_90"
+			},
+			{
+				"id": "88346329-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 140",
+				"tag": "lits_140"
+			},
+			{
+				"id": "8ee7f28b-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone Structure",
+				"tag": "tel_structure"
+			},
+			{
+				"id": "8f9ba1fe-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité point d'eau",
+				"tag": "eau"
+			},
+			{
+				"id": "9145ff9e-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Dates d'ouverture",
+				"tag": "dates_ouverture"
+			},
+			{
+				"id": "999cc305-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité toilettes publiques",
+				"tag": "toilettes"
+			},
+			{
+				"id": "9b473615-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Tarifs pratiqués",
+				"tag": "tarifs"
+			},
+			{
+				"id": "a7125719-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité DAB",
+				"tag": "DAB"
+			},
+			{
+				"id": "a952074a-c486-11e7-962c-020000fa5665",
+				"value": "198",
+				"title": "Kilomètre",
+				"tag": "kilometer"
+			},
+			{
+				"id": "af4520db-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité commerces",
+				"tag": "commerces"
+			},
+			{
+				"id": "bc7670e6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nombre de randonneurs passés dans l'année",
+				"tag": "nbre_randonneurs"
+			},
+			{
+				"id": "bff7454b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Description de l'hébergement",
+				"tag": "description_hébergement"
+			},
+			{
+				"id": "cc91ecc6-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Raison sociale structure",
+				"tag": "nom_structure"
+			},
+			{
+				"id": "e49b12ad-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Structure",
+				"tag": "adresse_structure"
+			},
+			{
+				"id": "f492c8c8-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Structure",
+				"tag": "email_structure"
+			},
+			{
+				"id": "f658b608-260a-11e8-92c1-020000fa5665",
+				"value": "1",
+				"title": "Actif (1 = actif; 0 ou vide = inactif)",
+				"tag": "actif"
+			},
+			{
+				"id": "fc4f18a4-c30d-11e7-962c-020000fa5665",
+				"value": null,
+				"title": "Altitude",
+				"tag": "altitude"
+			}
+		],
+		"comments": [],
+		"created_at": 1570209517,
+		"updated_at": 1583231593,
+		"deleted_at": null,
+		"is_favorite": false,
+		"visible": true,
+		"tag": null
+	},
+	{
+		"types_id": [
+			"06c86918-c493-11e7-962c-020000fa5665"
+		],
+		"id": "00dc3ef9-808e-11e9-b6c1-02000072878d",
+		"latitude": 44.052736600000003,
+		"longitude": 4.1368277000000004,
+		"name": "( 239 km ) Gite d'acceuil \"Entre Lune et Soleil\".",
+		"description": "<p style=\"text-align:left;\"><span style=\"color: rgb(51,51,51);font-size: 13px;\">Ce gîte de groupe, de 1 à 5 personnes ouvert toute l'année</span></p>\n<p style=\"text-align:left;\"><span style=\"color: rgb(51,51,51);font-size: 13px;\">Ce gîte de 50m2 divisé en 2 pièces. Tarif  : 35€ pour une personne, supplément de 10 € à chaque personne supplémentaire.</span></p>\n<p style=\"text-align:left;\"><span style=\"color: rgb(51,51,51);font-size: 13px;\">Adresse :  12 montée du Temple 30360 Vézénobres  06 12 25 31 51</span></p>\n",
+		"medias": [
+			{
+				"media_types_id": [],
+				"id": "43a07195-f1af-11e9-bb51-02000072878d",
+				"link": "https://api.openium.fr/uploads/media/d601b4fc8e55f2a7050e3834667d3550.jpeg",
+				"name": "maison aquarelle 2.jpg",
+				"mime_type": "image/jpeg",
+				"order": 1,
+				"tag": null,
+				"created_at": 1571407066,
+				"updated_at": null,
+				"deleted_at": null
+			}
+		],
+		"custom_fields": [
+			{
+				"id": "00dbd8da-072b-11e8-92c1-020000fa5665",
+				"value": "https://entre-lune-et-soleil.monsite-orange.fr/",
+				"title": "Site Internet",
+				"tag": "site_internet"
+			},
+			{
+				"id": "08f0a546-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil PMR",
+				"tag": "accueil_PMR"
+			},
+			{
+				"id": "159e8525-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Réseaux sociaux",
+				"tag": "reseaux_sociaux"
+			},
+			{
+				"id": "1cdcbcd9-072c-11e8-92c1-020000fa5665",
+				"value": "Non.",
+				"title": "Accueil ânes/chevaux",
+				"tag": "accueil_chevaux"
+			},
+			{
+				"id": "2671149b-072b-11e8-92c1-020000fa5665",
+				"value": "Olivier Fraisse.",
+				"title": "Nom responsable",
+				"tag": "nom_responsable"
+			},
+			{
+				"id": "2f7c98f4-072c-11e8-92c1-020000fa5665",
+				"value": "Oui connexion Cable internet.",
+				"title": "Accès WIFI gratuit",
+				"tag": "acces_wifi"
+			},
+			{
+				"id": "3820a826-072b-11e8-92c1-020000fa5665",
+				"value": "12 montée du Temple 30360 Vézénobres.",
+				"title": "Adresse Responsable",
+				"tag": "adresse_responsable"
+			},
+			{
+				"id": "42ca8c4b-072c-11e8-92c1-020000fa5665",
+				"value": "Chéques + éspéces.",
+				"title": "Moyens de paiement acceptés",
+				"tag": "moyens_paiement"
+			},
+			{
+				"id": "4a4bc01f-072b-11e8-92c1-020000fa5665",
+				"value": "06 12 25 31 51.",
+				"title": "Téléphone (fixe/mobile) Responsable",
+				"tag": "tel_responsable"
+			},
+			{
+				"id": "55efc471-072b-11e8-92c1-020000fa5665",
+				"value": "ol.fraisse@wanadoo.fr",
+				"title": "Email Responsable",
+				"tag": "email_responsable"
+			},
+			{
+				"id": "5f3f9b28-072c-11e8-92c1-020000fa5665",
+				"value": "Non.",
+				"title": "Possibilités de bivouaquer",
+				"tag": "bivouac"
+			},
+			{
+				"id": "6f2162f6-072c-11e8-92c1-020000fa5665",
+				"value": "Oui il peuvent les mettre dans le gite.",
+				"title": "Accueil vélos",
+				"tag": "accueil_velos"
+			},
+			{
+				"id": "7214b41c-072b-11e8-92c1-020000fa5665",
+				"value": "5.",
+				"title": "Capacité d'accueil totale",
+				"tag": "capacite_accueil_totale"
+			},
+			{
+				"id": "7cd50790-072c-11e8-92c1-020000fa5665",
+				"value": "Oui.",
+				"title": "Préparation pique-nique",
+				"tag": "piquenique"
+			},
+			{
+				"id": "7de25fab-072b-11e8-92c1-020000fa5665",
+				"value": "3.",
+				"title": "Lits en 90",
+				"tag": "lits_90"
+			},
+			{
+				"id": "88346329-072b-11e8-92c1-020000fa5665",
+				"value": "1.",
+				"title": "Lits en 140",
+				"tag": "lits_140"
+			},
+			{
+				"id": "8ee7f28b-072a-11e8-92c1-020000fa5665",
+				"value": "06 12 25 31 51.",
+				"title": "Téléphone Structure",
+				"tag": "tel_structure"
+			},
+			{
+				"id": "8f9ba1fe-072c-11e8-92c1-020000fa5665",
+				"value": "Oui.",
+				"title": "Proximité point d'eau",
+				"tag": "eau"
+			},
+			{
+				"id": "9145ff9e-072b-11e8-92c1-020000fa5665",
+				"value": "Toute l'année",
+				"title": "Dates d'ouverture",
+				"tag": "dates_ouverture"
+			},
+			{
+				"id": "999cc305-072c-11e8-92c1-020000fa5665",
+				"value": "Oui.",
+				"title": "Proximité toilettes publiques",
+				"tag": "toilettes"
+			},
+			{
+				"id": "9b473615-072b-11e8-92c1-020000fa5665",
+				"value": "à partir de 35€",
+				"title": "Tarifs pratiqués",
+				"tag": "tarifs"
+			},
+			{
+				"id": "a7125719-072c-11e8-92c1-020000fa5665",
+				"value": "Oui.",
+				"title": "Proximité DAB",
+				"tag": "DAB"
+			},
+			{
+				"id": "a952074a-c486-11e7-962c-020000fa5665",
+				"value": "239",
+				"title": "Kilomètre",
+				"tag": "kilometer"
+			},
+			{
+				"id": "af4520db-072c-11e8-92c1-020000fa5665",
+				"value": "Oui.",
+				"title": "Proximité commerces",
+				"tag": "commerces"
+			},
+			{
+				"id": "bc7670e6-072c-11e8-92c1-020000fa5665",
+				"value": "Olivier Fraisse.",
+				"title": "Nombre de randonneurs passés dans l'année",
+				"tag": "nbre_randonneurs"
+			},
+			{
+				"id": "bff7454b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Description de l'hébergement",
+				"tag": "description_hébergement"
+			},
+			{
+				"id": "cc91ecc6-072a-11e8-92c1-020000fa5665",
+				"value": "Gite d'acceuil \"entre Lune et Soleil\".",
+				"title": "Raison sociale structure",
+				"tag": "nom_structure"
+			},
+			{
+				"id": "e49b12ad-072a-11e8-92c1-020000fa5665",
+				"value": "12 montée du Temple 30360 Vézénobres.",
+				"title": "Adresse Structure",
+				"tag": "adresse_structure"
+			},
+			{
+				"id": "f492c8c8-072a-11e8-92c1-020000fa5665",
+				"value": "ol.fraisse@wanadoo.fr",
+				"title": "Email Structure",
+				"tag": "email_structure"
+			},
+			{
+				"id": "f658b608-260a-11e8-92c1-020000fa5665",
+				"value": "1",
+				"title": "Actif (1 = actif; 0 ou vide = inactif)",
+				"tag": "actif"
+			},
+			{
+				"id": "fc4f18a4-c30d-11e7-962c-020000fa5665",
+				"value": "(186 m).",
+				"title": "Altitude",
+				"tag": "altitude"
+			}
+		],
+		"comments": [],
+		"created_at": 1558968299,
+		"updated_at": 1581933808,
+		"deleted_at": null,
+		"is_favorite": false,
+		"visible": true,
+		"tag": null
+	},
+	{
+		"types_id": [
+			"252da993-c493-11e7-962c-020000fa5665"
+		],
+		"id": "012a242c-8de6-11ea-837c-02000072878d",
+		"latitude": 43.967399385554998,
+		"longitude": 4.5244359970093004,
+		"name": "Hébergements possibles",
+		"description": "",
+		"medias": [],
+		"custom_fields": [
+			{
+				"id": "00dbd8da-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Site Internet",
+				"tag": "site_internet"
+			},
+			{
+				"id": "08f0a546-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil PMR",
+				"tag": "accueil_PMR"
+			},
+			{
+				"id": "159e8525-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Réseaux sociaux",
+				"tag": "reseaux_sociaux"
+			},
+			{
+				"id": "1cdcbcd9-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil ânes/chevaux",
+				"tag": "accueil_chevaux"
+			},
+			{
+				"id": "2671149b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nom responsable",
+				"tag": "nom_responsable"
+			},
+			{
+				"id": "2f7c98f4-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accès WIFI gratuit",
+				"tag": "acces_wifi"
+			},
+			{
+				"id": "3820a826-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Responsable",
+				"tag": "adresse_responsable"
+			},
+			{
+				"id": "42ca8c4b-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Moyens de paiement acceptés",
+				"tag": "moyens_paiement"
+			},
+			{
+				"id": "4a4bc01f-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone (fixe/mobile) Responsable",
+				"tag": "tel_responsable"
+			},
+			{
+				"id": "55efc471-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Responsable",
+				"tag": "email_responsable"
+			},
+			{
+				"id": "5f3f9b28-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Possibilités de bivouaquer",
+				"tag": "bivouac"
+			},
+			{
+				"id": "6f2162f6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil vélos",
+				"tag": "accueil_velos"
+			},
+			{
+				"id": "7214b41c-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Capacité d'accueil totale",
+				"tag": "capacite_accueil_totale"
+			},
+			{
+				"id": "7cd50790-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Préparation pique-nique",
+				"tag": "piquenique"
+			},
+			{
+				"id": "7de25fab-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 90",
+				"tag": "lits_90"
+			},
+			{
+				"id": "88346329-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 140",
+				"tag": "lits_140"
+			},
+			{
+				"id": "8ee7f28b-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone Structure",
+				"tag": "tel_structure"
+			},
+			{
+				"id": "8f9ba1fe-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité point d'eau",
+				"tag": "eau"
+			},
+			{
+				"id": "9145ff9e-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Dates d'ouverture",
+				"tag": "dates_ouverture"
+			},
+			{
+				"id": "999cc305-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité toilettes publiques",
+				"tag": "toilettes"
+			},
+			{
+				"id": "9b473615-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Tarifs pratiqués",
+				"tag": "tarifs"
+			},
+			{
+				"id": "a7125719-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité DAB",
+				"tag": "DAB"
+			},
+			{
+				"id": "a952074a-c486-11e7-962c-020000fa5665",
+				"value": null,
+				"title": "Kilomètre",
+				"tag": "kilometer"
+			},
+			{
+				"id": "af4520db-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité commerces",
+				"tag": "commerces"
+			},
+			{
+				"id": "bc7670e6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nombre de randonneurs passés dans l'année",
+				"tag": "nbre_randonneurs"
+			},
+			{
+				"id": "bff7454b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Description de l'hébergement",
+				"tag": "description_hébergement"
+			},
+			{
+				"id": "cc91ecc6-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Raison sociale structure",
+				"tag": "nom_structure"
+			},
+			{
+				"id": "e49b12ad-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Structure",
+				"tag": "adresse_structure"
+			},
+			{
+				"id": "f492c8c8-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Structure",
+				"tag": "email_structure"
+			},
+			{
+				"id": "f658b608-260a-11e8-92c1-020000fa5665",
+				"value": "1",
+				"title": "Actif (1 = actif; 0 ou vide = inactif)",
+				"tag": "actif"
+			},
+			{
+				"id": "fc4f18a4-c30d-11e7-962c-020000fa5665",
+				"value": null,
+				"title": "Altitude",
+				"tag": "altitude"
+			}
+		],
+		"comments": [],
+		"created_at": 1588582958,
+		"updated_at": 1588842514,
+		"deleted_at": null,
+		"is_favorite": false,
+		"visible": true,
+		"tag": null
+	},
+	{
+		"types_id": [],
+		"id": "01f3f3c4-8609-11e9-b6c1-02000072878d",
+		"latitude": 44.050699999999999,
+		"longitude": 4.1326999999999998,
+		"name": "Le relais sarrasin",
+		"description": "",
+		"medias": [
+			{
+				"media_types_id": [],
+				"id": "82f1a5db-f1af-11e9-bb51-02000072878d",
+				"link": "https://api.openium.fr/uploads/media/406daa074629440ecfa72cc968cebd1f.jpeg",
+				"name": "relais sarrasin.jpg",
+				"mime_type": "image/jpeg",
+				"order": 1,
+				"tag": null,
+				"created_at": 1571407172,
+				"updated_at": null,
+				"deleted_at": null
+			}
+		],
+		"custom_fields": [
+			{
+				"id": "00dbd8da-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Site Internet",
+				"tag": "site_internet"
+			},
+			{
+				"id": "08f0a546-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil PMR",
+				"tag": "accueil_PMR"
+			},
+			{
+				"id": "159e8525-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Réseaux sociaux",
+				"tag": "reseaux_sociaux"
+			},
+			{
+				"id": "1cdcbcd9-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil ânes/chevaux",
+				"tag": "accueil_chevaux"
+			},
+			{
+				"id": "2671149b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nom responsable",
+				"tag": "nom_responsable"
+			},
+			{
+				"id": "2f7c98f4-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accès WIFI gratuit",
+				"tag": "acces_wifi"
+			},
+			{
+				"id": "3820a826-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Responsable",
+				"tag": "adresse_responsable"
+			},
+			{
+				"id": "42ca8c4b-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Moyens de paiement acceptés",
+				"tag": "moyens_paiement"
+			},
+			{
+				"id": "4a4bc01f-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone (fixe/mobile) Responsable",
+				"tag": "tel_responsable"
+			},
+			{
+				"id": "55efc471-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Responsable",
+				"tag": "email_responsable"
+			},
+			{
+				"id": "5f3f9b28-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Possibilités de bivouaquer",
+				"tag": "bivouac"
+			},
+			{
+				"id": "6f2162f6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Accueil vélos",
+				"tag": "accueil_velos"
+			},
+			{
+				"id": "7214b41c-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Capacité d'accueil totale",
+				"tag": "capacite_accueil_totale"
+			},
+			{
+				"id": "7cd50790-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Préparation pique-nique",
+				"tag": "piquenique"
+			},
+			{
+				"id": "7de25fab-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 90",
+				"tag": "lits_90"
+			},
+			{
+				"id": "88346329-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Lits en 140",
+				"tag": "lits_140"
+			},
+			{
+				"id": "8ee7f28b-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Téléphone Structure",
+				"tag": "tel_structure"
+			},
+			{
+				"id": "8f9ba1fe-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité point d'eau",
+				"tag": "eau"
+			},
+			{
+				"id": "9145ff9e-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Dates d'ouverture",
+				"tag": "dates_ouverture"
+			},
+			{
+				"id": "999cc305-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité toilettes publiques",
+				"tag": "toilettes"
+			},
+			{
+				"id": "9b473615-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Tarifs pratiqués",
+				"tag": "tarifs"
+			},
+			{
+				"id": "a7125719-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité DAB",
+				"tag": "DAB"
+			},
+			{
+				"id": "a952074a-c486-11e7-962c-020000fa5665",
+				"value": "237",
+				"title": "Kilomètre",
+				"tag": "kilometer"
+			},
+			{
+				"id": "af4520db-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Proximité commerces",
+				"tag": "commerces"
+			},
+			{
+				"id": "bc7670e6-072c-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Nombre de randonneurs passés dans l'année",
+				"tag": "nbre_randonneurs"
+			},
+			{
+				"id": "bff7454b-072b-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Description de l'hébergement",
+				"tag": "description_hébergement"
+			},
+			{
+				"id": "cc91ecc6-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Raison sociale structure",
+				"tag": "nom_structure"
+			},
+			{
+				"id": "e49b12ad-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Adresse Structure",
+				"tag": "adresse_structure"
+			},
+			{
+				"id": "f492c8c8-072a-11e8-92c1-020000fa5665",
+				"value": null,
+				"title": "Email Structure",
+				"tag": "email_structure"
+			},
+			{
+				"id": "f658b608-260a-11e8-92c1-020000fa5665",
+				"value": "0",
+				"title": "Actif (1 = actif; 0 ou vide = inactif)",
+				"tag": "actif"
+			},
+			{
+				"id": "fc4f18a4-c30d-11e7-962c-020000fa5665",
+				"value": null,
+				"title": "Altitude",
+				"tag": "altitude"
+			}
+		],
+		"comments": [],
+		"created_at": 1559570885,
+		"updated_at": 1581677713,
+		"deleted_at": null,
+		"is_favorite": false,
+		"visible": true,
+		"tag": null
+	}
+]
