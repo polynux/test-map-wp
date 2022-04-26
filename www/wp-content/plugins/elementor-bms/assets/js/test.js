@@ -49,6 +49,21 @@ async function loadJSON(url) {
     return points.json();
 }
 
+function createPopup({ title, text, image, link }) {
+    let imgDiv = "";
+    if (image !== undefined) {
+        imgDiv = `<img src="${image.link}" alt="${title}" class="map-popup-image">`;
+    }
+    let titleDiv = `<a href="${link}" class="map-popup-title">${title}</a>`;
+    // let textDiv = `<p class="map-popup-text">${text}</p>`;
+    let popup = `<div class="map-popup-container">
+        ${imgDiv}
+        ${titleDiv}
+        ${text}
+        </div>`;
+    return popup;
+}
+
 async function markersInit() {
     let markers = L.layerGroup();
     let points = await loadJSON(pointUrl);
@@ -60,7 +75,14 @@ async function markersInit() {
             title: point.name
         })
             .addTo(markers)
-            .bindPopup(point.name);
+            .bindPopup(
+                createPopup({
+                    title: point.name,
+                    text: point.description,
+                    image: point.medias[0],
+                    link: "#"
+                })
+            );
     });
 
     return markers;
@@ -71,16 +93,17 @@ async function mapInit() {
     let map = L.map(mapID, {
         center: [44.135, 3.8389],
         zoom: 9,
-        // layers: [OrthoIGN, PlanIGN]
-        layers: [PlanIGN, markers]
+        layers: [PlanIGN]
     });
+
+    var conditionalLayer = L.conditionalMarkers(markers.getLayers(), { maxMarkers: 2 }).addTo(map);
 
     let baseMaps = {
         Map: PlanIGN,
         Photos: OrthoIGN
     };
     let overlayMaps = {
-        '<i class="fa-solid fa-house"></i> Points': markers
+        '<i class="fa-solid fa-house"></i> Points': conditionalLayer
     };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
 
