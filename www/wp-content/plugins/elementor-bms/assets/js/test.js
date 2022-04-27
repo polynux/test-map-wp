@@ -37,12 +37,6 @@ const OrthoIGN = L.tileLayer(
 let pointUrl = document.getElementById("map").attributes["data-points"].nodeValue;
 
 let polyline = L.polyline([], { color: "gray" });
-let locationIcon = L.divIcon({
-    html: '<i class="fa-solid fa-location-dot"></i><div class="marker-shadow"></div>',
-    iconAnchor: [13, 36],
-    popupAnchor: [0, -30],
-    className: "marker"
-});
 
 async function loadJSON(url) {
     let points = await fetch(url);
@@ -63,20 +57,58 @@ function createPopup({ title, text, image, link }) {
     return popup;
 }
 
-let pointSort = (a, b) => {
+const pointSort = (a, b) => {
     return map.distance(a.getLatLng(), b.getLatLng());
 };
 
 let testMarkers;
 
-async function markersInit() {
+async function loadIconsType() {
+    let icons = {};
+    let iconsJSON = await loadJSON(
+        "https://api.openium.fr/api/v1/app/applications/01d5f39f-c306-11e7-962c-020000fa5665/types"
+    );
+
+    iconsJSON.forEach(icon => {
+        icons[icon.id] = {
+            picture: icon.picture,
+            name: icon.tag
+        };
+    });
+
+    return icons;
+}
+
+const createIcon = (point, icons) => {
+    let locationIcon = L.divIcon({
+        html: '<i class="fa-solid fa-location-dot"></i><div class="marker-shadow"></div>',
+        iconAnchor: [13, 36],
+        popupAnchor: [0, -30],
+        className: "marker"
+    });
+
+    if (point.types_id[0] === undefined) {
+        return locationIcon;
+    }
+
+    let icon = icons[point.types_id[0]];
+
+    return L.icon({
+        iconUrl: icon.picture,
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+        popupAnchor: [0, -32]
+    });
+};
+
+async function markersInit(icons) {
     let markers = L.markerClusterGroup();
     let points = await loadJSON(pointUrl);
 
     points.forEach(point => {
         polyline.addLatLng([point.latitude, point.longitude]);
         L.marker([point.latitude, point.longitude], {
-            icon: locationIcon,
+            icon: createIcon(point, icons),
             title: point.name
         })
             .addTo(markers)
@@ -97,7 +129,8 @@ async function markersInit() {
 }
 
 async function mapInit() {
-    let markers = await markersInit();
+    let icons = await loadIconsType();
+    let markers = await markersInit(icons);
     let map = L.map(mapID, {
         center: [44.135, 3.8389],
         zoom: 9,
@@ -122,7 +155,7 @@ async function addMapControl() {
     // polyline.addTo(map);
     L.control.scale().addTo(map);
 
-    map.on("click", console.log);
+    // map.on("click", console.log);
 }
 
 addMapControl();
