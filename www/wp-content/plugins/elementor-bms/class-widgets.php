@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Widgets class.
  *
@@ -12,7 +13,7 @@
 namespace ElementorBms;
 
 // Security Note: Blocks direct access to the plugin PHP files.
-defined( 'ABSPATH' ) || die();
+defined('ABSPATH') || die();
 
 /**
  * Class Plugin
@@ -21,7 +22,8 @@ defined( 'ABSPATH' ) || die();
  *
  * @since 1.0.0
  */
-class Widgets {
+class Widgets
+{
 
 	/**
 	 * Instance
@@ -44,8 +46,9 @@ class Widgets {
 	 *
 	 * @return Plugin An instance of the class.
 	 */
-	public static function instance() {
-		if ( is_null( self::$instance ) ) {
+	public static function instance()
+	{
+		if (is_null(self::$instance)) {
 			self::$instance = new self();
 		}
 
@@ -60,9 +63,10 @@ class Widgets {
 	 * @since 1.0.0
 	 * @access private
 	 */
-	private function include_widgets_files() {
+	private function include_widgets_files()
+	{
 		require_once 'widgets/class-bms.php';
-		require_once 'widgets/class-test.php';
+		require_once 'widgets/class-map.php';
 	}
 
 	/**
@@ -73,13 +77,14 @@ class Widgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function register_widgets() {
+	public function register_widgets()
+	{
 		// It's now safe to include Widgets files.
 		$this->include_widgets_files();
 
 		// Register the plugin widget classes.
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Bms() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Test() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Bms());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Map());
 	}
 
 	/**
@@ -90,9 +95,10 @@ class Widgets {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function __construct() {
+	public function __construct()
+	{
 		// Register the widgets.
-		add_action( 'elementor/widgets/widgets_registered', array( $this, 'register_widgets' ) );
+		add_action('elementor/widgets/widgets_registered', array($this, 'register_widgets'));
 	}
 }
 

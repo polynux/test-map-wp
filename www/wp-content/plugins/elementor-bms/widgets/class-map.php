@@ -23,7 +23,7 @@ defined('ABSPATH') || die();
  *
  * @since 1.0.0
  */
-class Test extends Widget_Base
+class Map extends Widget_Base
 {
 
 	/**
@@ -59,7 +59,7 @@ class Test extends Widget_Base
 	 */
 	public function get_name()
 	{
-		return 'test';
+		return 'map';
 	}
 
 	/**
@@ -73,7 +73,7 @@ class Test extends Widget_Base
 	 */
 	public function get_title()
 	{
-		return esc_html__('test map', 'elementor-bms');
+		return esc_html__('map', 'elementor-bms');
 	}
 
 	/**
@@ -137,20 +137,6 @@ class Test extends Widget_Base
 	public function get_script_depends()
 	{
 		return array(['leaflet', 'leaflet-markercluster', 'leaflet-gpx', 'map']);
-	}
-
-	/**
-	 * Get widget keywords.
-	 *
-	 * Retrieve the list of keywords the oEmbed widget belongs to.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 * @return array Widget keywords.
-	 */
-	public function get_keywords()
-	{
-		return ['oembed', 'url', 'link'];
 	}
 
 	/**
