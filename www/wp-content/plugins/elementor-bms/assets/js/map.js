@@ -61,8 +61,6 @@ const pointSort = (a, b) => {
     return map.distance(a.getLatLng(), b.getLatLng());
 };
 
-let testMarkers;
-
 async function loadIconsType() {
     let icons = {};
     let iconsJSON = await loadJSON(
@@ -102,7 +100,11 @@ const createIcon = (point, icons) => {
 };
 
 async function markersInit(icons) {
-    let markers = L.markerClusterGroup();
+    let markers = L.markerClusterGroup({
+        showCoverageOnHover: false,
+        maxClusterRadius: 50,
+        disableClusteringAtZoom: 14
+    });
     let points = await loadJSON(pointUrl);
 
     points.forEach(point => {
@@ -121,9 +123,6 @@ async function markersInit(icons) {
                 })
             );
     });
-
-    console.log(markers);
-    testMarkers = markers;
 
     return markers;
 }
@@ -151,6 +150,26 @@ async function mapInit() {
 
 async function addMapControl() {
     let map = await mapInit();
+    let trail = "https://api.openium.fr/uploads/gpx/75033b1c-c30b-11e7-962c-020000fa5665.gpx";
+
+    new L.GPX(trail, {
+        async: true,
+        marker_options: {
+            startIconUrl: "",
+            endIconUrl: "",
+            shadowUrl: ""
+        },
+        polyline_options: {
+            color: "#1b3c70",
+            opacity: 0.75,
+            weight: 3,
+            lineCap: "round"
+        }
+    })
+        .on("loaded", function (e) {
+            map.fitBounds(e.target.getBounds());
+        })
+        .addTo(map);
 
     // polyline.addTo(map);
     L.control.scale().addTo(map);
