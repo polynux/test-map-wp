@@ -13,3 +13,9 @@
     width: 0px;
     height: 0px;
 }
+
+.leaflet-popup-content {
+    width: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
