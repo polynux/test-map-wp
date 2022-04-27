@@ -65,8 +65,13 @@ class Widgets
 	 */
 	private function include_widgets_files()
 	{
+<<<<<<< HEAD
 		require_once 'widgets/breadcumb.php';
 		require_once 'widgets/facet.php';
+=======
+		require_once 'widgets/class-bms.php';
+		require_once 'widgets/class-map.php';
+>>>>>>> 57c79e9d... rename
 	}
 
 	/**
@@ -83,8 +88,13 @@ class Widgets
 		$this->include_widgets_files();
 
 		// Register the plugin widget classes.
+<<<<<<< HEAD
 		\Elementor\Plugin::instance()->widgets_manager->register(new Widgets\Breadcumb());
 		\Elementor\Plugin::instance()->widgets_manager->register(new Widgets\Posts());
+=======
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Bms());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new Widgets\Map());
+>>>>>>> 57c79e9d... rename
 	}
 
 	/**
