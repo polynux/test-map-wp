@@ -36,8 +36,8 @@ class Test extends Widget_Base
 	{
 		parent::__construct($data, $args);
 
-		wp_register_style('test', plugins_url('/assets/css/test.css', ELEMENTOR_BMS), array(), '1.0.0');
-		wp_register_script('test', plugins_url('/assets/js/test.js', ELEMENTOR_BMS));
+		wp_register_style('map', plugins_url('/assets/css/map.css', ELEMENTOR_BMS), array(), '1.0.0');
+		wp_register_script('map', plugins_url('/assets/js/map.js', ELEMENTOR_BMS));
 		wp_register_script('leaflet-conditionalLayer', plugins_url('/assets/js/leaflet.conditionalLayer.js', ELEMENTOR_BMS));
 		wp_register_script('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.js");
 		wp_register_style('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.css");
@@ -45,6 +45,7 @@ class Test extends Widget_Base
 		wp_register_style('leaflet-markercluster', plugins_url('/assets/js/dist/MarkerCluster.css', ELEMENTOR_BMS));
 		wp_register_style('leaflet-markercluster-default', plugins_url('/assets/js/dist/MarkerCluster.Default.css', ELEMENTOR_BMS));
 		wp_register_script('leaflet-markercluster', plugins_url('/assets/js/dist/leaflet.markercluster.js', ELEMENTOR_BMS));
+		wp_register_script('leaflet-gpx', "https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js");
 	}
 
 	/**
@@ -127,7 +128,7 @@ class Test extends Widget_Base
 	 */
 	public function get_style_depends()
 	{
-		return array(['fontawesome', 'test', 'leaflet', 'leaflet-markercluster', 'leaflet-markercluster-default']);
+		return array(['fontawesome', 'map', 'leaflet', 'leaflet-markercluster', 'leaflet-markercluster-default']);
 	}
 
 	/**
@@ -135,7 +136,7 @@ class Test extends Widget_Base
 	 */
 	public function get_script_depends()
 	{
-		return array(['leaflet', 'leaflet-markercluster', 'test']);
+		return array(['leaflet', 'leaflet-markercluster', 'leaflet-gpx', 'map']);
 	}
 
 	/**

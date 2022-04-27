@@ -3,14 +3,9 @@
     height: 700px;
 }
 
-.leaflet-div-icon {
-    font-size: 36px;
-    color: blue;
-}
-
 .marker {
     font-size: 3em;
-    color: rgb(59, 59, 59);
+    color: rgb(212, 42, 42);
 }
 
 .marker-shadow {
