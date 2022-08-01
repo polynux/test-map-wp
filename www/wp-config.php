@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The base configuration for WordPress
  *
@@ -21,7 +22,20 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+<<<<<<< HEAD
 require_once( dirname( __FILE__ ) . '/wp-config.php' );
+=======
+define( 'DB_NAME', 'sandbox' );
+
+/** Database username */
+define( 'DB_USER', 'guillaume' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'pfkvnh0705' );
+
+/** Database hostname */
+define( 'DB_HOST', 'localhost' );
+>>>>>>> bec4bcf7... update all
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

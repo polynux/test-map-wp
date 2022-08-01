@@ -1,0 +1,778 @@
+# Translation of Plugins - Cookiebot | GDPR/CCPA Compliant Cookie Consent and Control - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Cookiebot | GDPR/CCPA Compliant Cookie Consent and Control - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-05 09:11:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Cookiebot | GDPR/CCPA Compliant Cookie Consent and Control - Stable (latest release)\n"
+
+#: addons/controller/addons/wp-rocket/wp-rocket.php:253
+#: src/addons/controller/addons/wp_rocket/Wp_Rocket.php:48
+msgid "Excludes cookiebot javascript files when the WP-Rocket deter option is enabled."
+msgstr "Exclut les fichiers javascript cookiebot lorsque l’option de dissuasion WP-Rocket est activée."
+
+#: src/view/admin/settings/network-settings-page.php:118
+#: src/view/admin/settings/network-settings-page.php:171
+#: src/view/admin/settings/settings-page.php:211
+#: src/view/admin/settings/settings-page.php:261
+msgid "None"
+msgstr "Aucun"
+
+#: src/view/admin/settings/settings-page.php:548
+msgid "Statistics Anonymous"
+msgstr "Statistiques anonymes"
+
+#: src/view/admin/settings/settings-page.php:505
+#: src/view/admin/settings/settings-page.php:560
+msgid "Marketing"
+msgstr "Marketing"
+
+#: src/view/admin/settings/settings-page.php:502
+#: src/view/admin/settings/settings-page.php:537
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: src/view/admin/settings/settings-page.php:499
+#: src/view/admin/settings/settings-page.php:526
+msgid "Preferences"
+msgstr "Préférences"
+
+#: src/view/admin/settings/settings-page.php:480
+msgid "WP Consent Level categories"
+msgstr "Catégories de niveau de consentement WP"
+
+#: src/view/admin/settings/network-settings-page.php:142
+#: src/view/admin/settings/network-settings-page.php:195
+msgid "Choose per subsite"
+msgstr "Choisir par sous-site"
+
+#: src/view/admin/settings/settings-page.php:572
+msgid "Reset to default mapping"
+msgstr "Rétablir la cartographie par défaut"
+
+#: src/view/admin/settings/settings-page.php:479
+msgid "Cookiebot categories"
+msgstr "Catégories Cookiebot"
+
+#: src/settings/pages/Debug_Page.php:23 src/settings/pages/Debug_Page.php:24
+msgid "Debug info"
+msgstr "Info de débogage"
+
+#: src/view/admin/settings/debug-page.php:19
+msgid "Copy debug information to clipboard"
+msgstr "Copier les infos de débogage dans le presse-papiers"
+
+#: src/view/admin/settings/debug-page.php:10
+msgid "The information below is for debugging purpose. If you have any issues with your Cookiebot integration, the information below is usefull for a supporter to help you the best way."
+msgstr "Les informations ci-dessous sont à des fins de débogage. Si vous rencontrez des problèmes avec votre intégration Cookiebot, les informations ci-dessous sont utiles pour qu’une personne du support vous aide de la meilleure façon."
+
+#: src/view/admin/settings/debug-page.php:7
+msgid "Debug information"
+msgstr "Infos de débogage"
+
+#: src/view/admin/settings/settings-page.php:434
+msgid "Consent Level API Settings"
+msgstr "Réglages de l’API du niveau de consentement"
+
+#: src/view/admin/settings/settings-page.php:443
+msgid "WP Consent Level API and Cookiebot categorise cookies a bit different. The default settings should fit mosts needs - but if you need to change the mapping you are able to do it below."
+msgstr "L'API de niveau de consentement WordPress et Cookiebot classent les cookies de façon un peu différente. Les réglages par défaut devraient convenir à la plupart des besoins - mais si vous avez besoin de modifier le mappage, vous pouvez le faire ci-dessous."
+
+#. Description of the plugin
+msgid "Cookiebot is a cloud-driven solution that automatically controls cookies and trackers, enabling full GDPR/ePrivacy and CCPA compliance for websites."
+msgstr "Cookiebot est une solution dans le cloud qui contrôle automatiquement les cookies et les traceurs, permettant une conformité totale des sites Web aux normes RGPD/ePrivacy et CCPA."
+
+#: src/lib/Supported_Languages.php:52
+msgid "Hungarian"
+msgstr "Hongrois"
+
+#: src/view/admin/settings/settings-page.php:368
+msgid "Disable Cookiebot in WP Admin"
+msgstr "Désactiver Cookiebot dans l’administration WP"
+
+#: addons/controller/plugin-controller.php:105
+#: src/addons/controller/Plugin_Controller.php:69
+msgid "In some occasions this may cause client side errors. If you notice any errors please try to disable Cookiebot addons or contact Cookiebot support."
+msgstr "Dans certains cas particuliers, ceci peut générer des erreurs côté client. Si vous détectez une erreur, veuillez désactiver les modules Cookiebot ou contacter le support de Cookiebot."
+
+#: addons/controller/plugin-controller.php:104
+#: src/addons/controller/Plugin_Controller.php:68
+msgid "You enabled Cookiebot auto blocking mode but still using addons"
+msgstr "Vous avez activé le mode de blocage automatique de Cookiebot mais vous utilisez toujours les modules complémentaires"
+
+#: src/view/admin/settings/network-settings-page.php:100
+msgid "Should Cookiebot automatic block cookies by tagging known tags."
+msgstr "Cookiebot devrait-il bloquer automatiquement les cookies en marquant les balises connues."
+
+#: src/view/admin/settings/settings-page.php:189
+msgid "Advanced settings"
+msgstr "Réglages avancés"
+
+#: src/view/admin/settings/settings-page.php:101
+msgid "Learn more"
+msgstr "En savoir plus"
+
+#: src/view/admin/settings/settings-page.php:97
+msgid "Automatic block cookies (except necessary) until the user has given their consent."
+msgstr "Bloquer automatiquement les cookies (sauf ceux nécessaires) jusqu'à ce que l'utilisateur ait donné son accord."
+
+#: src/view/admin/settings/network-settings-page.php:97
+#: src/view/admin/settings/settings-page.php:94
+msgid "Manual"
+msgstr "Manuel"
+
+#: src/view/admin/settings/network-settings-page.php:89
+#: src/view/admin/settings/settings-page.php:85
+msgid "Automatic"
+msgstr "Automatique"
+
+#: src/view/admin/settings/network-settings-page.php:81
+#: src/view/admin/settings/settings-page.php:76
+msgid "Cookie-blocking mode"
+msgstr "Mode de blocage des cookies"
+
+#: src/view/admin/widgets/cookiebot-declaration-widget-form.php:33
+#: widgets/cookiebot-declaration-widget.php:38
+msgid "- Default -"
+msgstr "- Par défaut -"
+
+#: src/view/admin/widgets/cookiebot-declaration-widget-form.php:14
+#: widgets/cookiebot-declaration-widget.php:30
+msgid "Title"
+msgstr "Titre"
+
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:720
+#: src/view/admin/settings/prior-consent/other-addons/embed-autocorrect-extra-addon-options.php:10
+msgid "Show advanced options"
+msgstr "Afficher les options avancées"
+
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:727
+#: src/view/admin/settings/prior-consent/other-addons/embed-autocorrect-extra-addon-options.php:18
+msgid "This is for more advanced users."
+msgstr "Ceci est pour des utilisateurs avertis."
+
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:757
+#: src/view/admin/settings/prior-consent/other-addons/embed-autocorrect-extra-addon-options.php:49
+msgid "Reset to default regex"
+msgstr "Réinitialiser la regex par défaut"
+
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:743
+#: src/view/admin/settings/prior-consent/other-addons/embed-autocorrect-extra-addon-options.php:35
+msgid "Edit regex"
+msgstr "Modifier la regex"
+
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:731
+#: src/view/admin/settings/prior-consent/other-addons/embed-autocorrect-extra-addon-options.php:23
+msgid "Regex:"
+msgstr "Regex :"
+
+#: src/widgets/Cookiebot_Declaration_Widget.php:17
+#: widgets/cookiebot-declaration-widget.php:10
+msgid "Cookiebot - Cookie Declaration"
+msgstr "Cookiebot - Déclaration de cookies"
+
+#: src/widgets/Dashboard_Widget_Cookiebot_Status.php:39
+msgid "You need to enter your Cookiebot ID."
+msgstr "Vous devez saisir votre ID Cookiebot."
+
+#: src/settings/Network_Menu_Settings.php:35
+#: src/settings/pages/Settings_Page.php:20
+msgid "Cookiebot"
+msgstr "Cookiebot"
+
+#: src/settings/Network_Menu_Settings.php:43
+#: src/settings/pages/Settings_Page.php:31
+#: src/view/admin/settings/settings-page.php:22
+msgid "Cookiebot Settings"
+msgstr "Réglages Cookiebot"
+
+#: src/settings/Network_Menu_Settings.php:44
+#: src/settings/pages/Settings_Page.php:32
+msgid "Settings"
+msgstr "Réglages"
+
+#: src/settings/Network_Menu_Settings.php:51
+#: src/settings/pages/Support_Page.php:13
+msgid "Cookiebot Support"
+msgstr "Support Cookiebot"
+
+#: src/settings/Network_Menu_Settings.php:52
+#: src/settings/pages/Support_Page.php:14
+#: src/view/admin/settings/support-page.php:2
+msgid "Support"
+msgstr "Support"
+
+#: addons/config/settings-config.php:51
+#: src/addons/config/Settings_Config.php:67
+#: src/addons/config/Settings_Config.php:68
+msgid "Prior Consent"
+msgstr "Consentement préalable"
+
+#: src/lib/Supported_Languages.php:8
+msgid "Norwegian Bokmål"
+msgstr "Norvégien Bokmål"
+
+#: src/lib/Supported_Languages.php:10
+msgid "German"
+msgstr "Allemand"
+
+#: src/lib/Supported_Languages.php:11
+msgid "Czech"
+msgstr "Tchèque"
+
+#: src/lib/Supported_Languages.php:12
+msgid "Danish"
+msgstr "Danois"
+
+#: src/lib/Supported_Languages.php:13
+msgid "Albanian"
+msgstr "Albanais"
+
+#: src/lib/Supported_Languages.php:14
+msgid "Hebrew"
+msgstr "Hébreu"
+
+#: src/lib/Supported_Languages.php:15
+msgid "Korean"
+msgstr "Coréen"
+
+#: src/lib/Supported_Languages.php:16
+msgid "Italian"
+msgstr "Italien"
+
+#: src/lib/Supported_Languages.php:17
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: src/lib/Supported_Languages.php:18
+msgid "Vietnamese"
+msgstr "Vietnamien"
+
+#: src/lib/Supported_Languages.php:20
+msgid "Icelandic"
+msgstr "Islandais"
+
+#: src/lib/Supported_Languages.php:21
+msgid "Romanian"
+msgstr "Roumain"
+
+#: src/lib/Supported_Languages.php:23
+msgid "Catalan"
+msgstr "Catalan"
+
+#: src/lib/Supported_Languages.php:24
+msgid "Bulgarian"
+msgstr "Bulgare"
+
+#: src/lib/Supported_Languages.php:25
+msgid "Ukrainian"
+msgstr "Ukrainien"
+
+#: src/lib/Supported_Languages.php:26
+msgid "Chinese"
+msgstr "Chinois"
+
+#: src/lib/Supported_Languages.php:27
+msgid "English"
+msgstr "Anglais"
+
+#: src/lib/Supported_Languages.php:28
+msgid "Arabic"
+msgstr "Arabe"
+
+#: src/lib/Supported_Languages.php:29
+msgid "Croatian"
+msgstr "Croate"
+
+#: src/lib/Supported_Languages.php:31
+msgid "Greek"
+msgstr "Grec"
+
+#: src/lib/Supported_Languages.php:32
+msgid "Lithuanian"
+msgstr "Lituanien"
+
+#: src/lib/Supported_Languages.php:33
+msgid "Polish"
+msgstr "Polonais"
+
+#: src/lib/Supported_Languages.php:34
+msgid "Latvian"
+msgstr "Letton"
+
+#: src/lib/Supported_Languages.php:35
+msgid "French"
+msgstr "Français"
+
+#: src/lib/Supported_Languages.php:36
+msgid "Indonesian"
+msgstr "Indonésien"
+
+#: src/lib/Supported_Languages.php:37
+msgid "Macedonian"
+msgstr "Macédonien"
+
+#: src/lib/Supported_Languages.php:38
+msgid "Estonian"
+msgstr "Estonien"
+
+#: src/lib/Supported_Languages.php:39
+msgid "Portuguese"
+msgstr "Portugais"
+
+#: src/lib/Supported_Languages.php:40
+msgid "Irish"
+msgstr "Irlandais"
+
+#: src/lib/Supported_Languages.php:41
+msgid "Malay"
+msgstr "Malais"
+
+#: src/lib/Supported_Languages.php:42
+msgid "Slovenian"
+msgstr "Slovène"
+
+#: src/lib/Supported_Languages.php:43
+msgid "Russian"
+msgstr "Russe"
+
+#: src/lib/Supported_Languages.php:44
+msgid "Japanese"
+msgstr "Japonais"
+
+#: src/lib/Supported_Languages.php:45
+msgid "Hindi"
+msgstr "Hindi"
+
+#: src/lib/Supported_Languages.php:46
+msgid "Slovak"
+msgstr "Slovaque"
+
+#: src/lib/Supported_Languages.php:47
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: src/lib/Supported_Languages.php:48
+msgid "Swedish"
+msgstr "Suédois"
+
+#: src/lib/Supported_Languages.php:49
+msgid "Serbian"
+msgstr "Serbe"
+
+#: src/lib/Supported_Languages.php:50
+msgid "Finnish"
+msgstr "Finnois"
+
+#: src/lib/Supported_Languages.php:51
+msgid "Basque"
+msgstr "Basque"
+
+#: src/view/admin/settings/settings-page.php:54
+msgid "Cookiebot ID"
+msgstr "ID Cookiebot"
+
+#: src/view/admin/settings/network-settings-page.php:70
+#: src/view/admin/settings/settings-page.php:65
+msgid "Sign up for free on cookiebot.com"
+msgstr "Inscrivez-vous gratuitement sur cookiebot.com"
+
+#: src/view/admin/settings/settings-page.php:111
+msgid "Default (Autodetect)"
+msgstr "Par défaut (détection automatique)"
+
+#: src/view/admin/settings/settings-page.php:181
+msgid "Hide guide"
+msgstr "Masquer le guide"
+
+#: src/view/admin/settings/network-settings-page.php:106
+#: src/view/admin/settings/network-settings-page.php:159
+#: src/view/admin/settings/settings-page.php:194
+#: src/view/admin/settings/settings-page.php:244
+msgid "Add async or defer attribute"
+msgstr "Ajouter un attribut asynchrone ou différé"
+
+#: addons/controller/addons/jetpack/widget/facebook-widget.php:236
+#: src/addons/controller/addons/jetpack/widget/Facebook_Jetpack_Widget.php:76
+msgid "Facebook widget."
+msgstr "Widget Facebook."
+
+#: addons/config/settings-config.php:226
+#: src/view/admin/settings/prior-consent/jetpack-widgets/tab-header.php:1
+msgid "Jetpack settings."
+msgstr "Réglages de Jetpack."
+
+#: src/widgets/Dashboard_Widget_Cookiebot_Status.php:44
+msgid "Your Cookiebot is working!"
+msgstr "Votre ID Cookiebot fonctionne !"
+
+#: src/lib/Supported_Languages.php:9
+msgid "Turkish"
+msgstr "Turc"
+
+#: src/lib/Supported_Languages.php:30
+msgid "Thai"
+msgstr "Thaïlandais"
+
+#: src/view/admin/settings/settings-page.php:146
+msgid "The auto-detect checkbox needs to be enabled in the Cookiebot administration tool."
+msgstr "La case à cocher de détection automatique doit être activée dans l’outil d’administration de Cookiebot."
+
+#: src/view/admin/settings/network-settings-page.php:67
+#: src/view/admin/settings/settings-page.php:62
+msgid "Need an ID?"
+msgstr "Besoin d’un ID ?"
+
+#: src/view/admin/settings/settings-page.php:139
+msgid "You need to add all languages that you want auto-detected in the Cookiebot administration tool."
+msgstr "Vous devez ajouter toutes les langues que vous souhaitez détecter automatiquement dans l’outil d’administration de Cookiebot."
+
+#: src/view/admin/settings/settings-page.php:153
+msgid "If the auto-detected language is not supported, Cookiebot will use the default language."
+msgstr "Si la langue auto-détectée n’est pas prise en charge, Cookiebot utilisera la langue par défaut."
+
+#: src/view/admin/settings/settings-page.php:164
+msgid "Show guide to add languages"
+msgstr "Afficher le guide pour ajouter des langues"
+
+#: src/widgets/Dashboard_Widget_Cookiebot_Status.php:41
+msgid "Update your Cookiebot ID"
+msgstr "Mettre à jour votre ID Cookiebot"
+
+#: src/view/admin/settings/settings-page.php:107
+msgid "Cookiebot Language"
+msgstr "Langue Cookiebot"
+
+#: src/view/admin/settings/settings-page.php:133
+msgid "You need to add the language in the Cookiebot administration tool."
+msgstr "Vous devez ajouter la langue dans l’outil d’administration de Cookiebot."
+
+#: addons/config/settings-config.php:295
+#: src/addons/config/Settings_Config.php:506
+msgid "The plugin is not activated."
+msgstr "L’extension n’est pas activée."
+
+#: addons/view/admin/settings/setting-page.php:8
+msgid "These add-ons are produced by an open-source community of developers. This is done to help make it easier for Wordpress users to implement ‘prior consent’ for cookies and trackers set by plugins that do not offer this as a built-in functionality."
+msgstr "Les modules complémentaires sont produits par une communauté de développeurs open-source. Ils ont pour but de permettre aux utilisateurs de WordPress d’implémenter plus facilement le « consentement préalable » pour les cookies et les traqueurs définis par des extensions qui ne l’offrent pas comme une fonctionnalité intégrée."
+
+#: addons/view/admin/settings/setting-page.php:5
+#: src/view/admin/settings/prior-consent/page.php:12
+msgid "Prior consent"
+msgstr "Consentement préalable"
+
+#: addons/view/admin/settings/available-addon-callback.php:98
+#: addons/view/admin/settings/jetpack-addon-callback.php:95
+#: src/view/admin/settings/prior-consent/available-addons/tab.php:77
+#: src/view/admin/settings/prior-consent/jetpack-widgets/tab.php:71
+msgid "+ Add language"
+msgstr "Ajouter une langue"
+
+#: addons/config/settings-config.php:70
+#: addons/view/admin/settings/available-addon-callback.php:64
+#: addons/view/admin/settings/jetpack-addon-callback.php:60
+#: src/addons/config/Settings_Config.php:107
+#: src/view/admin/settings/prior-consent/partials/placeholder-submitboxes.php:24
+msgid "Remove language"
+msgstr "Retirer une langue"
+
+#: addons/view/admin/settings/available-addon-callback.php:55
+#: addons/view/admin/settings/available-addon-callback.php:79
+#: addons/view/admin/settings/jetpack-addon-callback.php:51
+#: addons/view/admin/settings/jetpack-addon-callback.php:75
+#: src/view/admin/settings/prior-consent/partials/placeholder-submitbox-default.php:9
+#: src/view/admin/settings/prior-consent/partials/placeholder-submitboxes.php:18
+#: src/view/admin/widgets/cookiebot-declaration-widget-form.php:26
+#: widgets/cookiebot-declaration-widget.php:34
+msgid "Language"
+msgstr "Langue"
+
+#: addons/view/admin/settings/available-addon-callback.php:39
+#: addons/view/admin/settings/jetpack-addon-callback.php:35
+#: src/view/admin/settings/prior-consent/available-addons/tab.php:59
+#: src/view/admin/settings/prior-consent/jetpack-widgets/tab.php:53
+msgid "Display a placeholder"
+msgstr "Afficher un texte indicatif"
+
+#: addons/view/admin/settings/available-addon-callback.php:19
+#: addons/view/admin/settings/jetpack-addon-callback.php:14
+#: src/view/admin/settings/prior-consent/available-addons/tab.php:27
+#: src/view/admin/settings/prior-consent/jetpack-widgets/tab.php:25
+msgid "Check one or multiple cookie types:"
+msgstr "Cochez un ou plusieurs types de cookies :"
+
+#: addons/view/admin/settings/available-addon-callback.php:14
+#: addons/view/admin/settings/jetpack-addon-callback.php:8
+#: src/view/admin/settings/prior-consent/available-addons/tab.php:18
+#: src/view/admin/settings/prior-consent/jetpack-widgets/tab.php:15
+msgid "Enable"
+msgstr "Activer"
+
+#: src/view/admin/notices/cookiebot-recommendation-notice-links.php:44
+msgid "Never show again"
+msgstr "Ne plus jamais afficher"
+
+#: src/view/admin/notices/cookiebot-recommendation-notice-links.php:33
+msgid "Maybe Later"
+msgstr "Peut-être ultérieurement"
+
+#: src/admin_notices/Cookiebot_Recommendation_Notice.php:49
+msgid "We hope you enjoy using WordPress Cookiebot! Would you consider leaving us a review on WordPress.org?"
+msgstr "Nous espérons que vous appréciez l’utilisation de WordPress Cookiebot ! Pourriez-vous nous laisser un avis sur WordPress.org ?"
+
+#: src/view/admin/notices/cookiebot-recommendation-notice-links.php:22
+msgid "I've already left a review"
+msgstr "J’ai déjà laissé un avis"
+
+#: src/admin_notices/Cookiebot_Recommendation_Notice.php:48
+msgid "Leave A Review?"
+msgstr "Laisser un avis ?"
+
+#: src/shortcode/Cookiebot_Declaration_Shortcode.php:53
+msgid "Please add your Cookiebot ID to show Cookie Declarations"
+msgstr "Veuillez ajouter votre idenfiant Cookiebot pour afficher les déclarations de cookie"
+
+#: src/view/admin/settings/support-page.php:125
+msgid "Update your script tags this way:"
+msgstr "Mettez à jour vos balises de scripts de cette façon :"
+
+#: src/view/admin/settings/support-page.php:119
+msgid "You are able to update your scripts yourself. However, Cookiebot also offers a small helper function that makes the work easier."
+msgstr "Vous pouvez mettre à jour vos scripts vous-même. Cependant, Cookiebot offre également une petite fonction d’aide qui facilite le travail."
+
+#: src/view/admin/settings/support-page.php:116
+msgid "Helper function to update your scripts"
+msgstr "Fonction d’aide pour la mise à jour de vos scripts"
+
+#: src/view/admin/settings/support-page.php:84
+msgid "Update your script tags"
+msgstr "Mettez à jour vos balises de script"
+
+#: src/view/admin/settings/support-page.php:77
+#: src/view/admin/settings/support-page.php:108
+msgid "Watch video demonstration"
+msgstr "Voir la vidéo de démonstration"
+
+#: src/view/admin/settings/support-page.php:49
+msgid "Remember to change your scripts as descripted below"
+msgstr "Pensez à modifier vos scripts comme décrit ci-dessous"
+
+#: src/view/admin/settings/support-page.php:38
+msgid "Copy the value inside the data-cid parameter - eg.: abcdef12-3456-7890-abcd-ef1234567890"
+msgstr "Copiez la valeur dans le paramètre data-cid - ex. : abcdef12-3456-7890-abcd-ef1234567890"
+
+#: src/view/admin/settings/support-page.php:3
+msgid "How to find my Cookiebot ID"
+msgstr "Comment trouver mon ID Cookiebot"
+
+#: src/view/admin/settings/network-settings-page.php:243
+msgid "Remove the cookie consent banner from all subsites. This cannot be changed by subsites. The <i>[cookie_declaration]</i> shortcode will still be available."
+msgstr "Retirer la bannière de consentement aux cookies de tous les sous-domaines. Cela ne peut pas être modifié par les sous-domaines. Le code court <i>[cookie_declaration]</i> sera toujours disponible."
+
+#: src/view/admin/settings/network-settings-page.php:153
+#: src/view/admin/settings/network-settings-page.php:206
+msgid "Add async or defer attribute to Cookiebot script tag. Default: Choose per subsite"
+msgstr "Ajouter un attribut async ou defer à la balise de script Cookiebot. Par défaut : Choisir par sous-domaine"
+
+#: src/view/admin/settings/network-settings-page.php:147
+#: src/view/admin/settings/network-settings-page.php:200
+msgid "Setting will apply for all subsites. Subsites will not be able to override."
+msgstr "Le réglage s’appliquera à tous les sous-domaines. Les sous-domaines ne pourront pas passer outre."
+
+#: src/view/admin/settings/network-settings-page.php:60
+msgid "If added this will be the default Cookiebot ID for all subsites. Subsites are able to override the Cookiebot ID."
+msgstr "S’il est ajouté, ce sera l’ID par défaut de Cookiebot pour tous les sous-domaines. Les sous-domaines sont en mesure de remplacer l’ID de Cookiebot."
+
+#: src/view/admin/settings/network-settings-page.php:39
+msgid "The settings below is network wide settings. See notes below each field."
+msgstr "Les réglages ci-dessous sont ceux du réseau. Voir les notes sous chaque champ."
+
+#: src/view/admin/settings/network-settings-page.php:9
+msgid "Cookiebot Network Settings"
+msgstr "Réglages du réseau Cookiebot"
+
+#: src/view/admin/settings/network-settings-page.php:50
+msgid "Network Cookiebot ID"
+msgstr "ID du réseau Cookiebot"
+
+#: src/view/admin/settings/network-settings-page.php:257
+msgid "<a href=\"https://support.cookiebot.com/hc/en-us/articles/360003793854-Google-Tag-Manager-deployment\" target=\"_blank\">See a detailed guide here</a>"
+msgstr "<a href=\"https://support.cookiebot.com/hc/en-us/articles/360003793854-Google-Tag-Manager-deployment\" target=\"_blank\">Voir le guide détaillé ici</a>"
+
+#: src/view/admin/settings/network-settings-page.php:250
+#: src/view/admin/settings/settings-page.php:353
+msgid "If you are using Google Tag Manager (or equal), you need to add the Cookiebot script in your Tag Manager."
+msgstr "Si vous utilisez le Google Tag Manager (ou équivalent), vous devez ajouter le script Cookiebot dans votre Tag Manager."
+
+#: src/view/admin/settings/settings-page.php:346
+msgid "This checkbox will remove the cookie consent banner from your website. The <i>[cookie_declaration]</i> shortcode will still be available."
+msgstr "Cette case à cocher retirera la bannière de consentement aux cookies de votre site web. Le code court <i>[cookie_declaration]</i> sera toujours disponible."
+
+#: src/view/admin/settings/network-settings-page.php:230
+#: src/view/admin/settings/settings-page.php:315
+msgid "Hide Cookie Popup"
+msgstr "Masquer la fenêtre surgissante des cookies"
+
+#: src/view/admin/settings/network-settings-page.php:266
+msgid "Hide Cookie Popup in WP Admin"
+msgstr "Masquer la fenêtre surgissante des cookies dans l’administration de WordPress"
+
+#: src/view/admin/settings/network-settings-page.php:225
+#: src/view/admin/settings/settings-page.php:307
+msgid "Automatic update your Cookiebot plugin when new releases becomes available."
+msgstr "Mettre automatiquement à jour votre extension Cookiebot lorsque de nouvelles versions sont disponibles."
+
+#: src/view/admin/settings/network-settings-page.php:211
+#: src/view/admin/settings/settings-page.php:296
+msgid "Auto-update Cookiebot"
+msgstr "Mise à jour automatique de Cookiebot"
+
+#: src/view/admin/settings/settings-page.php:170
+msgid "Read more here"
+msgstr "Plus d’informations ici"
+
+#: src/lib/Supported_Languages.php:22
+msgid "Sinhala"
+msgstr "Singhalais"
+
+#: src/lib/Supported_Languages.php:19
+msgid "Tamil"
+msgstr "Tamoul"
+
+#: src/settings/pages/Iab_Page.php:13 src/settings/pages/Iab_Page.php:14
+#: src/view/admin/settings/iab-page.php:2
+msgid "IAB"
+msgstr "IAB"
+
+#: src/widgets/Dashboard_Widget_Cookiebot_Status.php:23
+msgid "Cookiebot Status"
+msgstr "État de Cookiebot"
+
+#. Author URI of the plugin
+msgid "http://cookiebot.com"
+msgstr "http://cookiebot.com"
+
+#. Author of the plugin
+msgid "Cybot A/S"
+msgstr "Cybot A/S"
+
+#. Plugin URI of the plugin
+msgid "https://cookiebot.com/"
+msgstr "https://cookiebot.com/"
+
+#. Plugin Name of the plugin
+msgid "Cookiebot | GDPR/CCPA Compliant Cookie Consent and Control"
+msgstr "Cookiebot | Contrôle et consentement des cookies conformes GDPR/CCPA"
+
+#: src/view/admin/notices/cookiebot-recommendation-notice-links.php:11
+msgid "Sure! I'd love to!"
+msgstr "Bien sûr ! J’adorerais !"
+
+#: src/view/admin/settings/network-settings-page.php:107
+#: src/view/admin/settings/settings-page.php:195
+msgid "Consent banner script tag"
+msgstr "Balise de script de bannière de consentement"
+
+#: addons/view/admin/settings/setting-page.php:14
+#: src/view/admin/settings/prior-consent/page.php:21
+msgid "We do not assume any responsibility for the use of these add-ons. If one of the plugins that the add-ons hook into makes a ‘breaking change’, there may be a period of time where the add-on will not work properly until it has been updated to accommodate the changes in the plugin."
+msgstr "Nous n’assumons aucune responsabilité quant à l’utilisation de ces modules complémentaires. Si l’une des extensions dans lesquelles les modules complémentaires s’insèrent provoque des changements majeurs, il peut y avoir une période de temps pendant laquelle le module complémentaire ne fonctionnera pas correctement tant qu’il n’aura pas été mis à jour pour s’adapter aux modifications de l’extension."
+
+#: addons/view/admin/settings/setting-page.php:18
+msgid "If your favourite plugin isn't supported you're welcome to contribute or request on our <a href=\"%s\" target=\"_blank\">Github development page.</a>"
+msgstr "Si votre extension préférée n’est pas prise en charge, vous pouvez contribuer ou faire une demande sur notre <a href=\"%s\" target=\"_blank\">page de développement GitHub.</a>"
+
+#: src/view/admin/settings/settings-page.php:232
+#: src/view/admin/settings/settings-page.php:282
+#: src/view/admin/settings/settings-page.php:338
+#: src/view/admin/settings/settings-page.php:391
+#: src/view/admin/settings/settings-page.php:422
+msgid "Network setting applied. Please contact website administrator to change this setting."
+msgstr "Réglage réseau appliqué. Veuillez contacter l’administrateur du site web pour modifier ce réglage."
+
+#: src/view/admin/settings/settings-page.php:238
+#: src/view/admin/settings/settings-page.php:288
+msgid "Add async or defer attribute to Cookiebot script tag. Default: async"
+msgstr "Ajouter un attribut async ou defer à la balise de script Cookiebot. Par défaut : async"
+
+#: addons/controller/addons/google-analytics/google-analytics.php:243
+#: src/addons/controller/addons/google_analytics/Google_Analytics.php:36
+msgid "Google Analytics is used to track how visitor interact with website content."
+msgstr "Google Analytics est utilisé pour suivre la façon dont les visiteurs interagissent avec le contenu du site web."
+
+#: addons/controller/addons/google-analytics-plus/google-analytics-plus.php:238
+#: src/addons/controller/addons/google_analytics_plus/Google_Analytics_Plus.php:32
+msgid "Google Analytics is a simple, easy-to-use tool that helps website owners measure how users interact with website content"
+msgstr "Google Analytics est un outil simple et facile à utiliser qui aide les propriétaires de sites web à mesurer la façon dont les utilisateurs interagissent avec le contenu de leur site"
+
+#: addons/controller/addons/add-to-any/add-to-any.php:291
+#: addons/controller/addons/embed-autocorrect/embed-autocorrect.php:613
+#: src/addons/controller/addons/add_to_any/Add_To_Any.php:86
+#: src/addons/controller/addons/embed_autocorrect/Embed_Autocorrect.php:428
+msgid "Blocks embedded videos from Youtube, Twitter, Vimeo and Facebook."
+msgstr "Bloque les vidéos embarquées de YouTube, Twitter, Vimeo et Facebook."
+
+#: addons/controller/addons/wpforms/wpforms.php:272
+#: src/addons/controller/addons/wpforms/Wpforms.php:62
+msgid "Increases opt-in rate compared to WPForms \"GDPR mode\"."
+msgstr "Augmente le taux d’adhésion par rapport au \"mode RGPD\" de WPForms."
+
+#: addons/controller/addons/wpforms/wpforms.php:270
+#: src/addons/controller/addons/wpforms/Wpforms.php:61
+msgid "If the user gives correct consent, IP and Unique User ID will be saved on form submissions, otherwise not."
+msgstr "Si l’utilisateur donne son consentement, l’IP et l’ID unique de l’utilisateur seront enregistrés lors des soumissions de formulaire, sinon ils ne le seront pas."
+
+#: addons/config/settings-config.php:276
+msgid "The following addons are unavailable. This is because the corresponding plugin is not installed."
+msgstr "Les modules complémentaires suivants ne sont pas disponibles. Cela est dû au fait que l’extension correspondante n'est pas installée."
+
+#: addons/config/settings-config.php:252
+#: src/addons/config/Settings_Config.php:394
+msgid "Deactivate an addon if you want to handle GDPR compliance yourself, or through another plugin."
+msgstr "Désactivez un module complémentaire si vous souhaitez gérer vous-même la conformité au RGPD ou par le biais d’une autre extension."
+
+#: addons/config/settings-config.php:250
+#: src/addons/config/Settings_Config.php:392
+msgid "These addons are available because you have the corresponding plugins installed and activated."
+msgstr "Ces modules complémentaires sont disponibles parce que vous avez les extensions correspondantes installées et activées."
+
+#: addons/config/settings-config.php:248
+#: src/addons/config/Settings_Config.php:390
+msgid "Below is a list of addons for Cookiebot. Addons help you make installed plugins GDPR compliant."
+msgstr "Vous trouverez ci-dessous une liste d’extensions pour Cookiebot. Les modules complémentaires vous aident à rendre les extensions installées conformes au RGPD."
+
+#: addons/view/admin/settings/setting-page.php:28
+msgid "This feature is only available in PHP 5.4 and above."
+msgstr "Cette fonctionnalité est uniquement disponible à partir de la version PHP 5.4"
+
+#: addons/controller/addons/optinmonster/optinmonster.php:235
+#: src/addons/controller/addons/optinmonster/Optinmonster.php:32
+msgid "OptinMonster API plugin to connect your WordPress site to your OptinMonster account."
+msgstr "Extension API OptinMonster pour connecter votre site WordPress à votre compte OptinMonster."
+
+#: addons/config/settings-config.php:293
+#: src/addons/config/Settings_Config.php:499
+msgid "The plugin is not installed."
+msgstr "L’extension n’est pas installée."
+
+#: addons/view/admin/settings/setting-page.php:11
+msgid "The add-ons are currently the best alternative to a Wordpress Core framework that can signal the user’s consent state to other plugins (if and when this will be implemented is unknown) and to those plugins who do not yet offer native support for Cookiebot built into the plugin itself."
+msgstr "Les modules complémentaires sont actuellement la meilleure alternative au framework du cœur de WordPress qui peut signaler l’état de consentement de l’utilisateur à d’autres extensions (on ignore si et quand cela sera implémenté) et aux extensions qui n’offrent pas encore de prise en charge native d’intégration pour Cookiebot."
+
+#: src/view/admin/settings/support-page.php:52
+msgid "Add the Cookie Declaration to your website"
+msgstr "Ajouter la déclaration de cookies à votre site web"
+
+#: src/view/admin/settings/network-settings-page.php:160
+#: src/view/admin/settings/settings-page.php:245
+msgid "Cookie declaration script tag"
+msgstr "Balise de script de déclaration de cookies"
+
+#: src/view/admin/settings/support-page.php:87
+msgid "To enable prior consent, apply the attribute \"data-cookieconsent\" to cookie-setting script tags on your website. Set the comma-separated value to one or more of the cookie categories \"preferences\", \"statistics\" and \"marketing\" in accordance with the types of cookies being set by each script. Finally change the attribute \"type\" from \"text/javascript\" to \"text/plain\". Example on modifying an existing Google Analytics Universal script tag."
+msgstr "Pour permettre un consentement préalable, appliquez l’attribut « data-cookieconsent » aux balises de script d’installation de cookies sur votre site web. Définissez les valeurs séparées par une virgule pour une ou plusieurs catégories de cookies : « preferences », « statistics » et « marketing » en fonction des types de cookies définis par chaque script. Enfin, changez l’attribut « type » de \"text/javascript\" en \"text/plain\". Exemple de modification d’une balise de script existante de Google Analytics Universal."

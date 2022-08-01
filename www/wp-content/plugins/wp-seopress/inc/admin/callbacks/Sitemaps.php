@@ -77,7 +77,11 @@ function seopress_xml_sitemap_video_enable_callback()
 
 <?php echo seopress_tooltip_link($docs['sitemaps']['video'], __('Guide to enable XML video sitemaps - new window', 'wp-seopress')); ?>
 
-<?php printf('<p class="description">' . __('Your video sitemap is empty? Read our guide to learn more about <a href="%s" target="_blank">adding videos to your sitemap.</a>', 'wp-seopress') . '</p>', $docs['sitemaps']['video']); ?>
+<p class="description">
+    <?php printf(__('Your video sitemap is empty? Read our guide to learn more about <a href="%s" target="_blank">adding videos to your sitemap.</a>', 'wp-seopress'), $docs['sitemaps']['video']); ?><br>
+    <?php _e('YouTube videos are automatically added when you create / save a post, page or post type.', 'wp-seopress'); ?><br>
+    <?php printf(__('<a href="%s">Regenerate automatic XML Video sitemap for YouTube?</a>', 'wp-seopress'), admin_url('admin.php?page=seopress-import-export#tab=tab_seopress_tool_video')); ?>
+</p>
 
 <?php if (isset($options['seopress_xml_sitemap_video_enable'])) {
             esc_attr($options['seopress_xml_sitemap_video_enable']);
@@ -151,7 +155,7 @@ function seopress_xml_sitemap_post_types_list_callback()
     $output       = 'objects'; // names or objects, note names is the default
     $operator     = 'and'; // 'and' or 'or'
 
-    $post_types = get_post_types($args, $output, $operator);
+    $post_types = apply_filters( 'seopress_sitemaps_cpt', get_post_types($args, $output, $operator) );
 
     foreach ($post_types as $seopress_cpt_key => $seopress_cpt_value) { ?>
 <h3>
@@ -210,7 +214,7 @@ function seopress_xml_sitemap_taxonomies_list_callback()
 
     $output         = 'objects'; // or objects
     $operator       = 'and'; // 'and' or 'or'
-    $taxonomies     = get_taxonomies($args, $output, $operator);
+    $taxonomies     = apply_filters( 'seopress_sitemaps_tax', get_taxonomies($args, $output, $operator) );
 
     foreach ($taxonomies as $seopress_tax_key => $seopress_tax_value) { ?>
 <h3>

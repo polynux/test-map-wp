@@ -129,6 +129,37 @@
                     seopress_notification($args);
                 }
             }
+            function seopress_get_hidden_notices_seo_consultant_option()
+            {
+                $seopress_get_hidden_notices_seo_consultant_option = get_option('seopress_notices');
+                if (! empty($seopress_get_hidden_notices_seo_consultant_option)) {
+                    foreach ($seopress_get_hidden_notices_seo_consultant_option as $key => $seopress_get_hidden_notices_seo_consultant_value) {
+                        $options[$key] = $seopress_get_hidden_notices_seo_consultant_value;
+                    }
+                    if (isset($seopress_get_hidden_notices_seo_consultant_option['notice-seo-consultant'])) {
+                        return $seopress_get_hidden_notices_seo_consultant_option['notice-seo-consultant'];
+                    }
+                }
+            }
+            if ('1' != seopress_get_hidden_notices_seo_consultant_option()) {
+                $args = [
+                    'id'     => 'notice-seo-consultant',
+                    'title'  => __('Talk to a SEO consultant', 'wp-seopress'),
+                    'desc'   => __('Your site is growing and you want support for your SEO strategy, increase your sales and conversions? We are there for that. Contact us!', 'wp-seopress'),
+                    'impact' => [
+                        'info' => __('Wizard', 'wp-seopress'),
+                    ],
+                    'link' => [
+                        'en'       => 'https://www.seopress.org/wordpress-seo-plugins/seo-audit-config/',
+                        'fr'       => 'https://www.seopress.org/fr/extensions-seo-wordpress/audit-seo-et-configuration-de-seopress/',
+                        'title'    => __('Yes, please', 'wp-seopress'),
+                        'external' => true,
+                    ],
+                    'icon'       => 'dashicons-sos',
+                    'deleteable' => true,
+                ];
+                seopress_notification($args);
+            }
             //DIVI SEO options conflict
             $theme = wp_get_theme();
             if ('Divi' == $theme->template || 'Divi' == $theme->parent_theme) {
@@ -223,7 +254,7 @@
                             'high' => __('High impact', 'wp-seopress'),
                         ],
                         'link' => [
-                            'fr'       => 'https://www.seopress.org/fr/support/guides/corriger-erreur-compatibilite-extension-tagdiv-composer-newspaper/?utm_source=plugin&utm_medium=wp-admin&utm_campaign=seopress',
+                            'fr'       => 'https://www.seopress.org/fr/support/guides/corriger-lerreur-de-compatibilite-avec-lextension-tagdiv-composer-inclus-dans-le-theme-newspaper/?utm_source=plugin&utm_medium=wp-admin&utm_campaign=seopress',
                             'en'       => 'https://www.seopress.org/support/guides/fix-compatibility-issue-tagdiv-composer-plugin-newspaper-theme/?utm_source=plugin&utm_medium=wp-admin&utm_campaign=seopress',
                             'title'    => __('Fix this!', 'wp-seopress'),
                             'external' => true,

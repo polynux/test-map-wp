@@ -1,6 +1,6 @@
 <?php
 /* ======================================================
- # Login as User for WordPress - v1.4.2 (free version)
+ # Login as User for WordPress - v1.4.4 (free version)
  # -------------------------------------------------------
  # For WordPress
  # Author: Web357
@@ -9,14 +9,14 @@
  # Website: https:/www.web357.com
  # Demo: https://demo.web357.com/wordpress/login-as-user/wp-admin/
  # Support: support@web357.com
- # Last modified: Friday 11 February 2022, 02:47:21 AM
+ # Last modified: Tuesday 14 June 2022, 06:08:05 PM
  ========================================================= */
  
 /**
  * Plugin Name:       Login as User
  * Plugin URI:        https://www.web357.com/product/login-as-user-wordpress-plugin
  * Description:       Login as User is a free WordPress plugin that helps admins switch user accounts instantly to check data.
- * Version:           1.4.2
+ * Version:           1.4.4
  * Author:            Web357
  * Author URI:        https://www.web357.com/
  * License:           GPL-2.0+
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  */
 if ( !defined( 'LOGINASUSER_VERSION' ) ) {
-	define( 'LOGINASUSER_VERSION', '1.4.2' );
+	define( 'LOGINASUSER_VERSION', '1.4.4' );
 }
 
 

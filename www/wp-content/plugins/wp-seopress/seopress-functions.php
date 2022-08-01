@@ -68,6 +68,8 @@ function seopress_get_post_types() {
  *
  * @author Benjamin Denis
  *
+ * @deprecated 5.8.0
+ *
  * @param bool $with_terms
  *
  * @return array $taxonomies
@@ -99,6 +101,7 @@ function seopress_get_taxonomies($with_terms = false) {
 
     return $taxonomies;
 }
+
 
 /**
  * Get all custom fields (limit: 250).
@@ -285,7 +288,7 @@ function seopress_get_empty_templates($type, $metadata, $notice = true) {
         $notice_i18n = __('Custom Post Types', 'wp-seopress');
     }
     if ('tax' === $type) {
-        $templates   = seopress_get_taxonomies();
+        $templates   = seopress_get_service('WordPressData')->getTaxonomies();
         $notice_i18n = __('Custom Taxonomies', 'wp-seopress');
     }
     foreach ($templates as $key => $value) {
@@ -293,17 +296,21 @@ function seopress_get_empty_templates($type, $metadata, $notice = true) {
 
         if (!empty($options)) {
             if ('cpt' === $type) {
-                if (!array_key_exists($key, $options['seopress_titles_single_titles'])) {
-                    $cpt_titles_empty[] = $key;
-                } else {
-                    $data = isset($options['seopress_titles_single_titles'][$key][$metadata]) ? $options['seopress_titles_single_titles'][$key][$metadata] : '';
+                if (!empty($options['seopress_titles_single_titles'])) {
+                    if (!array_key_exists($key, $options['seopress_titles_single_titles'])) {
+                        $cpt_titles_empty[] = $key;
+                    } else {
+                        $data = isset($options['seopress_titles_single_titles'][$key][$metadata]) ? $options['seopress_titles_single_titles'][$key][$metadata] : '';
+                    }
                 }
             }
             if ('tax' === $type) {
-                if (!array_key_exists($key, $options['seopress_titles_tax_titles'])) {
-                    $cpt_titles_empty[] = $key;
-                } else {
-                    $data = isset($options['seopress_titles_tax_titles'][$key][$metadata]) ? $options['seopress_titles_tax_titles'][$key][$metadata] : '';
+                if (!empty($options['seopress_titles_tax_titles'])) {
+                    if (!array_key_exists($key, $options['seopress_titles_tax_titles'])) {
+                        $cpt_titles_empty[] = $key;
+                    } else {
+                        $data = isset($options['seopress_titles_tax_titles'][$key][$metadata]) ? $options['seopress_titles_tax_titles'][$key][$metadata] : '';
+                    }
                 }
             }
         }
@@ -655,7 +662,7 @@ function seopress_if_key_exists(array $arr, $key) {
  */
 function seopress_get_oxygen_content() {
     if (is_plugin_active('oxygen/functions.php') && function_exists('ct_template_output')) {
-        $seopress_get_the_content = ct_template_output();
+        $seopress_get_the_content = ct_template_output(true); //shortcodes?
 
         if ( ! $seopress_get_the_content) {
             //Get post content

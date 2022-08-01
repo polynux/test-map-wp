@@ -29,6 +29,7 @@ function seopress_get_docs_links()
                 'analytics'           => ['Mesurez votre trafic avec Google Analytics' => 'https://www.seopress.org/fr/support/guides/debutez-avec-google-analytics/' . $utm],
                 'search_console'      => ['Ajouter votre site WordPress à l’index de Google' => 'https://www.seopress.org/fr/support/guides/ajouter-votre-site-a-google-search-console/' . $utm],
                 'social'              => ['Optimisez votre taux de clics sur les réseaux sociaux' => 'https://www.seopress.org/fr/support/guides/gerer-les-metas-facebook-open-graph-et-twitter-cards/' . $utm],
+                'ebooks'              => ['Ebooks gratuits pour apprendre le référencement' => 'https://www.seopress.org/fr/support/ebooks/' . $utm],
             ],
             'get_started_insights'      => [
                 'installation'          => ['Activer votre licence SEOPress PRO / Insights' => 'https://www.seopress.org/fr/support/guides/activer-votre-licence-seopress-pro-insights/' . $utm3],
@@ -73,6 +74,9 @@ function seopress_get_docs_links()
                 'api' => [
                     'analytics' => 'https://console.cloud.google.com/apis/library/analytics.googleapis.com?hl=fr',
                     'reporting' => 'https://console.cloud.google.com/apis/library/analyticsreporting.googleapis.com?hl=fr'
+                ],
+                'matomo' => [
+                    'on_premise' => 'https://www.seopress.org/fr/support/guides/comment-utiliser-matomo-en-auto-heberge-avec-seopress-free/' . $utm,
                 ],
                 'clarity' => [
                     'project' => 'https://www.seopress.org/fr/support/guides/trouver-mon-id-de-project-microsoft-clarity/' . $utm,
@@ -126,11 +130,15 @@ function seopress_get_docs_links()
             ],
             'license' => [
                 'account'        => 'https://www.seopress.org/fr/mon-compte/' . $utm,
-                'license_errors' => 'https://www.seopress.org/fr/support/guides/activer-votre-licence-seopress-pro-insights/' . $utm,
+                'license_errors' => 'https://www.seopress.org/fr/support/guides/activer-votre-licence-seopress-pro-insights/'. $utm . '#je-ne-peux-toujours-pas-activer-ma-cle-de-licence',
+                'license_define' => 'https://www.seopress.org/fr/support/guides/activer-votre-licence-seopress-pro-insights/' . $utm . '#ajouter-ma-cle-de-licence-dans-wp-config-php',
             ],
             'addons' => [
                 'pro' => 'https://www.seopress.org/fr/extensions-seo-wordpress/seopress-pro/' . $utm,
                 'insights' => 'https://www.seopress.org/fr/extensions-seo-wordpress/seopress-insights/' . $utm,
+            ],
+            'insights' => [
+                'slack_webhook' => 'https://www.seopress.org/fr/support/guides/configurer-les-notifications-slack-avec-seopress-insights/' . $utm
             ]
         ];
     } else {
@@ -151,15 +159,16 @@ function seopress_get_docs_links()
                 'analytics'           => [__('Measure your traffic with Google Analytics', 'wp-seopress') => 'https://www.seopress.org/support/guides/google-analytics/' . $utm],
                 'search_console'      => [__('Add your WordPress site to Google’s index', 'wp-seopress') => 'https://www.seopress.org/support/guides/google-search-console/' . $utm],
                 'social'              => [__('Optimize your click-through rate on social networks', 'wp-seopress') => 'https://www.seopress.org/support/guides/manage-facebook-open-graph-and-twitter-cards-metas/' . $utm],
+                'ebooks'              => [__('Free ebooks to learn SEO', 'wp-seopress') => 'https://www.seopress.org/support/ebooks/' . $utm],
             ],
             'get_started_insights'      => [
-                'installation'          => ['Activate your SEOPress Insights license' => 'https://www.seopress.org/support/guides/activate-seopress-pro-license/' . $utm3],
-                'track_kw'              => ['Track your keyword rankings in Google with SEOPress Insights' => 'https://www.seopress.org/support/guides/track-keyword-rankings-google-seopress-insights/' . $utm3],
-                'track_bl'              => ['Monitor and analyse your Backlinks with SEOPress Insights' => 'https://www.seopress.org/support/guides/monitor-and-analyse-your-backlinks-with-seopress-insights/' . $utm3],
-                'find_kw'               => ['Finding SEO keywords for your WordPress site' => 'https://www.seopress.org/support/tutorials/finding-seo-keywords-for-your-blog/' . $utm3],
-                'optimize_kw'           => ['Optimize WordPress posts for a keyword' => 'https://www.seopress.org/support/tutorials/optimize-wordpress-posts-for-a-keyword/' . $utm3],
-                'audit_bl'              => ['Audit the backlinks of your WordPress site (in WordPress)' => 'https://www.seopress.org/support/tutorials/audit-the-backlinks-of-your-wordpress-site-in-wordpress/' . $utm3],
-                'importance_bl'         => ['The importance of backlinks' => 'https://www.seopress.org/support/tutorials/the-importance-of-backlinks/' . $utm3],
+                'installation'          => [__('Activate your SEOPress Insights license', 'wp-seopress') => 'https://www.seopress.org/support/guides/activate-seopress-pro-license/' . $utm3],
+                'track_kw'              => [__('Track your keyword rankings in Google with SEOPress Insights', 'wp-seopress') => 'https://www.seopress.org/support/guides/track-keyword-rankings-google-seopress-insights/' . $utm3],
+                'track_bl'              => [__('Monitor and analyse your Backlinks with SEOPress Insights', 'wp-seopress') => 'https://www.seopress.org/support/guides/monitor-and-analyse-your-backlinks-with-seopress-insights/' . $utm3],
+                'find_kw'               => [__('Finding SEO keywords for your WordPress site', 'wp-seopress') => 'https://www.seopress.org/support/tutorials/finding-seo-keywords-for-your-blog/' . $utm3],
+                'optimize_kw'           => [__('Optimize WordPress posts for a keyword', 'wp-seopress') => 'https://www.seopress.org/support/tutorials/optimize-wordpress-posts-for-a-keyword/' . $utm3],
+                'audit_bl'              => [__('Audit the backlinks of your WordPress site (in WordPress)', 'wp-seopress') => 'https://www.seopress.org/support/tutorials/audit-the-backlinks-of-your-wordpress-site-in-wordpress/' . $utm3],
+                'importance_bl'         => [__('The importance of backlinks', 'wp-seopress') => 'https://www.seopress.org/support/tutorials/the-importance-of-backlinks/' . $utm3],
             ],
             'universal' => [
                 'introduction' => 'https://www.seopress.org/features/page-builders-integration/' . $utm,
@@ -195,6 +204,9 @@ function seopress_get_docs_links()
                 'api' => [
                     'analytics' => 'https://console.cloud.google.com/apis/library/analytics.googleapis.com?hl=en',
                     'reporting' => 'https://console.cloud.google.com/apis/library/analyticsreporting.googleapis.com?hl=en'
+                ],
+                'matomo' => [
+                    'on_premise' => 'https://www.seopress.org/support/guides/how-to-use-matomo-on-premise-with-seopress-free/' . $utm,
                 ],
                 'clarity' => [
                     'project' => 'https://www.seopress.org/support/guides/find-my-microsoft-clarity-project-id/' . $utm,
@@ -248,11 +260,15 @@ function seopress_get_docs_links()
             ],
             'license' => [
                 'account'        => 'https://www.seopress.org/account/' . $utm,
-                'license_errors' => 'https://www.seopress.org/support/guides/activate-seopress-pro-license/' . $utm,
+                'license_errors' => 'https://www.seopress.org/support/guides/activate-seopress-pro-license/' . $utm . '#i-still-cant-activate-my-license-key',
+                'license_define' => 'https://www.seopress.org/support/guides/activate-seopress-pro-license/' . $utm . '#add-my-license-key-to-wp-config-php',
             ],
             'addons' => [
                 'pro' => 'https://www.seopress.org/wordpress-seo-plugins/pro/' . $utm,
                 'insights' => 'https://www.seopress.org/wordpress-seo-plugins/insights/' . $utm,
+            ],
+            'insights' => [
+                'slack_webhook' => 'https://www.seopress.org/support/guides/how-to-setup-slack-notifications-with-seopress-insights/' . $utm
             ]
         ];
     }

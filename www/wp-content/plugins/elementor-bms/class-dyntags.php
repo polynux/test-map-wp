@@ -29,7 +29,11 @@ if (!defined('ABSPATH')) {
 function register_dynamic_tags($dynamic_tags_manager)
 {
 
+<<<<<<< HEAD
     require_once(__DIR__ . '/dynamic-tags/readmore.php');
+=======
+    require_once(__DIR__ . '/dynamic-tags/class-readmore.php');
+>>>>>>> bec4bcf7... update all
 
     $dynamic_tags_manager->register(new ReadMoreTag);
 }

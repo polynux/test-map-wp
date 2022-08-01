@@ -2,9 +2,9 @@
 Contributors: forge12
 Tags: Profiler, Debug, Debugger, Performance, Tools
 Requires at least: 4.9
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: >=7.0
-Stable tag: 1.3.8
+Stable tag: 1.3.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,3 +96,6 @@ If you have any further questions do not hesitate to ask.
 
 = 1.3.8 =
 * WordPress Version 5.9 support
+
+= 1.3.8 =
+* WordPress Version 6.0 support

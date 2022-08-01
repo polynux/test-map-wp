@@ -4,7 +4,7 @@ Plugin Name: SEOPress
 Plugin URI: https://www.seopress.org/
 Description: One of the best SEO plugins for WordPress.
 Author: SEOPress
-Version: 5.6
+Version: 5.8.0.5
 Author URI: https://www.seopress.org/
 License: GPLv2
 Text Domain: wp-seopress
@@ -70,7 +70,7 @@ register_deactivation_hook(__FILE__, 'seopress_deactivation');
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //Define
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-define('SEOPRESS_VERSION', '5.6');
+define('SEOPRESS_VERSION', '5.8.0.5');
 define('SEOPRESS_AUTHOR', 'Benjamin Denis');
 define('SEOPRESS_PLUGIN_DIR_PATH', plugin_dir_path(__FILE__));
 define('SEOPRESS_PLUGIN_DIR_URL', plugin_dir_url(__FILE__));
@@ -80,7 +80,7 @@ define('SEOPRESS_TEMPLATE_SITEMAP_DIR', SEOPRESS_TEMPLATE_DIR . '/sitemap');
 define('SEOPRESS_TEMPLATE_JSON_SCHEMAS', SEOPRESS_TEMPLATE_DIR . '/json-schemas');
 
 define('SEOPRESS_DIRURL', plugin_dir_url(__FILE__));
-define('SEOPRESS_URL_DIST', SEOPRESS_DIRURL . 'public');
+define('SEOPRESS_URL_PUBLIC', SEOPRESS_DIRURL . 'public');
 define('SEOPRESS_URL_ASSETS', SEOPRESS_DIRURL . 'assets');
 define('SEOPRESS_DIR_LANGUAGES', dirname(plugin_basename(__FILE__)) . '/languages/');
 
@@ -368,14 +368,22 @@ function seopress_add_admin_options_scripts($hook) {
             ],
             'i18n'								=> [
                 'migration'								=> __('Migration completed!', 'wp-seopress'),
+                'video'								=> __('Regeneration completed!', 'wp-seopress'),
                 'export'								   => __('Export completed!', 'wp-seopress'),
             ],
         ];
         wp_localize_script('seopress-migrate-ajax', 'seopressAjaxMigrate', $seopress_migrate);
+
+        //Force regenerate video xml sitemap
+        $seopress_video_regenerate = [
+            'seopress_nonce'        => wp_create_nonce('seopress_video_regenerate_nonce'),
+            'seopress_video_regenerate'         => admin_url('admin-ajax.php'),
+        ];
+        wp_localize_script('seopress-migrate-ajax', 'seopressAjaxVdeoRegenerate', $seopress_video_regenerate);
     }
 
     //Tabs
-    if ('seopress-titles' === $_GET['page'] || 'seopress-xml-sitemap' === $_GET['page'] || 'seopress-social' === $_GET['page'] || 'seopress-google-analytics' === $_GET['page'] || 'seopress-advanced' === $_GET['page'] || 'seopress-import-export' === $_GET['page'] || 'seopress-instant-indexing' === $_GET['page']) {
+    if ('seopress-titles' === $_GET['page'] || 'seopress-xml-sitemap' === $_GET['page'] || 'seopress-social' === $_GET['page'] || 'seopress-google-analytics' === $_GET['page'] || 'seopress-advanced' === $_GET['page'] || 'seopress-import-export' === $_GET['page'] || 'seopress-instant-indexing' === $_GET['page'] || 'seopress-insights-settings' === $_GET['page']) {
         wp_enqueue_script('seopress-admin-tabs-js', plugins_url('assets/js/seopress-tabs' . $prefix . '.js', __FILE__), ['jquery-ui-tabs'], SEOPRESS_VERSION);
     }
 
@@ -472,11 +480,7 @@ function seopress_admin_body_class($classes) {
         'seopress-pro-page'                 => true,
         'seopress-instant-indexing'         => true,
         'seopress-bot-batch'                => true,
-        'seopress-license'                  => true,
-        'seopress-insights'                 => true,
-        'seopress-insights-rankings'        => true,
-        'seopress-insights-backlinks'       => true,
-        'seopress-insights-trends'          => true,
+        'seopress-license'                  => true
     ];
     if (isset($_pages[$_GET['page']])) {
         $classes .= ' seopress-styles ';
@@ -503,6 +507,7 @@ remove_filter('wp_robots', 'wp_robots_max_image_preview_large');
  *
  * @since 4.6
  * @todo use wp_robots API
+ * @updated 5.8
  */
 function seopress_robots_wc_pages($robots) {
     include_once ABSPATH . 'wp-admin/includes/plugin.php';
@@ -518,6 +523,17 @@ function seopress_robots_wc_pages($robots) {
                     return $robots;
                 }
             }
+        }
+    }
+    //remove noindex on search archive pages
+    if (is_search()) {
+        if ('0' === get_option('blog_public')) {
+            return $robots;
+        } else {
+            unset($robots);
+            $robots = [];
+
+            return $robots;
         }
     }
 
@@ -617,6 +633,28 @@ function seopress_plugin_action_links($links, $file) {
 
     return $links;
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Upgrade notice
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Display an upgrade message in the plugins list
+ *
+ * @since 5.7
+ *
+ * @param string $pluin_data, $new_data
+ *
+ * @return void
+ *
+ * @author Benjamin
+ */
+function seopress_plugin_update_message( $plugin_data, $new_data ) {
+    if (isset($plugin_data['new_version']) && $plugin_data['new_version'] <= '5.9') {
+        echo '<br /><strong><em>' . sprintf( __( 'Important changes related to XML sitemaps in version 5.8: <a href="%s" target="_blank">Learn more</a>.', 'wp-seopress' ), 'https://www.seopress.org/docs/xml-sitemap' ).'</em></strong>';
+
+    }
+}
+add_action( 'in_plugin_update_message-wp-seopress/seopress.php', 'seopress_plugin_update_message', 10, 2 );
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //Test if a feature is ON
@@ -800,6 +838,7 @@ if ('1' == seopress_xml_sitemap_general_enable_option() && '1' == seopress_get_t
             unset($q['seopress_paged']);
             unset($q['seopress_author']);
             unset($q['seopress_sitemap_xsl']);
+            unset($q['seopress_sitemap_video_xsl']);
         }
 
         return $q;

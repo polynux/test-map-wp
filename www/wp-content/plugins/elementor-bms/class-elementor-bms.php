@@ -118,6 +118,7 @@ final class Elementor_Bms
 		// Once we get here, We have passed all validation checks so we can safely include our widgets.
 		require_once 'class-widgets.php';
 		require_once 'class-dyntags.php';
+<<<<<<< HEAD
 
 		add_action('wp_enqueue_scripts', array($this, 'load_global_assets'));
 	}
@@ -126,6 +127,8 @@ final class Elementor_Bms
 	{
 		wp_register_script('elementor-bms-fix', plugins_url('assets/js/fix-elementor-animation.js ', ELEMENTOR_BMS), array(), self::VERSION);
 		wp_enqueue_script('elementor-bms-fix');
+=======
+>>>>>>> bec4bcf7... update all
 	}
 
 	/**

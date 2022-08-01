@@ -35,6 +35,8 @@ const OrthoIGN = L.tileLayer(
 );
 
 let pointUrl = document.getElementById("map").attributes["data-points"].nodeValue;
+let typesUrl = document.getElementById("map").attributes["data-types"].nodeValue;
+let trailUrl = document.getElementById("map").attributes["data-trail"].nodeValue;
 
 let polyline = L.polyline([], { color: "gray" });
 
@@ -49,6 +51,9 @@ function createPopup({ title, text, image, link }) {
         imgDiv = `<img src="${image.link}" alt="${title}" class="map-popup-image">`;
     }
     let titleDiv = `<a href="${link}" class="map-popup-title">${title}</a>`;
+    if (link == "#") {
+        titleDiv = `<div class="map-popup-title">${title}</div>`;
+    }
     let popup = `<div class="map-popup-container">
         ${imgDiv}
         ${titleDiv}
@@ -63,9 +68,7 @@ const pointSort = (a, b) => {
 
 async function loadIconsType() {
     let icons = {};
-    let iconsJSON = await loadJSON(
-        "https://api.openium.fr/api/v1/app/applications/01d5f39f-c306-11e7-962c-020000fa5665/types"
-    );
+    let iconsJSON = await loadJSON(typesUrl);
 
     iconsJSON.forEach(icon => {
         icons[icon.id] = {
@@ -107,8 +110,16 @@ async function markersInit(icons) {
     });
     let points = await loadJSON(pointUrl);
 
+    let postsCollection = await wp.api.collections.Posts().fetch();
+
     points.forEach(point => {
-        polyline.addLatLng([point.latitude, point.longitude]);
+        let link = "#";
+        postsCollection.forEach(post => {
+            if (point.name == post.title.rendered) {
+                link = post.link;
+            }
+        });
+
         L.marker([point.latitude, point.longitude], {
             icon: createIcon(point, icons),
             title: point.name
@@ -119,9 +130,12 @@ async function markersInit(icons) {
                     title: point.name,
                     text: point.description,
                     image: point.medias[0],
-                    link: "#"
+                    link: link
                 })
-            );
+            )
+            .on("click", e => {
+                e.target._map.panTo([e.latlng.lat + 0.01, e.latlng.lng]);
+            });
     });
 
     return markers;
@@ -141,7 +155,7 @@ async function mapInit() {
         Photos: OrthoIGN
     };
     let overlayMaps = {
-        '<i class="fa-solid fa-house"></i> Points': markers
+        '<i class="fa-solid fa-house"></i> Points d\'intérêt': markers
     };
     L.control.layers(baseMaps, overlayMaps).addTo(map);
 
@@ -150,9 +164,8 @@ async function mapInit() {
 
 async function addMapControl() {
     let map = await mapInit();
-    let trail = "https://api.openium.fr/uploads/gpx/75033b1c-c30b-11e7-962c-020000fa5665.gpx";
 
-    new L.GPX(trail, {
+    new L.GPX(trailUrl, {
         async: true,
         marker_options: {
             startIconUrl: "",
@@ -168,10 +181,10 @@ async function addMapControl() {
     })
         .on("loaded", function (e) {
             map.fitBounds(e.target.getBounds());
+            // console.log(e.target.get_elevation_data());//get elevation data from gpx
         })
         .addTo(map);
 
-    // polyline.addTo(map);
     L.control.scale().addTo(map);
 
     // map.on("click", console.log);

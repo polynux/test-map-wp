@@ -7,6 +7,7 @@ jQuery(document).ready(function ($) {
         ["seopress_google_analytics_enable", "seopress_google_analytics_enable"],
         ["seopress_tool_settings", "seopress_tool_settings"],
         ["seopress_instant_indexing_general", "seopress_instant_indexing_general"],
+        ["seopress_insights_general", "seopress_insights_general"]
     ];
 
     features.forEach(function (item) {
@@ -306,8 +307,6 @@ jQuery(document).ready(function ($) {
 
 
     $('#seopress_instant_indexing_google_action_include[URL_UPDATED]').is(':checked') ? true : false,
-
-
         //Instant Indexing: Batch URLs
         $('.seopress-instant-indexing-batch').on('click', function () {
             $('#seopress-tabs .spinner').css(

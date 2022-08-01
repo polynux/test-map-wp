@@ -427,3 +427,23 @@ function stop_heartbeat() {
     return $do_tag_minification;
 };
 add_filter( "w3tc_minify_css_do_tag_minification", "filter_w3tc_minify_css_do_tag_minification", 10, 3 );*/
+
+function additional_upload_file_types($mime_types) {
+    $mime_types['json'] = 'application/json';
+    $mime_types['gpx'] = '';
+    return $mime_types;
+}
+add_filter('upload_mimes', 'additional_upload_file_types', 1, 1);
+
+function register_elementor_graphql() {
+    register_graphql_field('Post', 'elementorData', [
+        'type' => 'String',
+        'description' => __('Elementor Data JSON', 'wp-graphql'),
+        'resolve' => function($post) {
+            $data = get_post_meta($post->ID, '_elementor_data', true);
+            return !empty($data) ? $data : null;
+        }
+    ]);
+}
+
+add_action('graphql_register_types', 'register_elementor_graphql');

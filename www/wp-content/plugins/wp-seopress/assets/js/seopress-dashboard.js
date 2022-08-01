@@ -8,6 +8,7 @@ jQuery(document).ready(function ($) {
         "notice-usm",
         "notice-wizard",
         "notice-insights-wizard",
+        "notice-seo-consultant",
         "notice-tagdiv",
         "notice-divide-comments",
         "notice-review",
@@ -64,6 +65,7 @@ jQuery(document).ready(function ($) {
         "dublin-core",
         "rich-snippets",
         "breadcrumbs",
+        "inspect-url",
         "robots",
         "news",
         "404",
@@ -188,8 +190,8 @@ jQuery(document).ready(function ($) {
             $('#' + seopress_admin_tab_session_storage.split('#tab=')).addClass("active");
         } else {
             //Default TAB
-            $('#tab_seopress_analytics-tab').addClass("nav-tab-active");
-            $('#tab_seopress_analytics').addClass("active");
+            $('#seopress-admin-tabs a.nav-tab').first().addClass("nav-tab-active");
+            $('#seopress-admin-tabs .wrap-seopress-tab-content > div').first().addClass("active");
         }
     };
     $("#seopress-admin-tabs").find("a.nav-tab").click(function (e) {

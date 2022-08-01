@@ -10,7 +10,7 @@ namespace f12_profiler {
 	/*
 	Plugin Name: F12 Profiler
 	Description: Used to keep track on the execution time of the plugins and themes.
-	Version: 1.3.8
+	Version: 1.3.9
 	Author: Forge12 Interactive GmbH
 	Author URI: https://www.forge12.com
 	License: GPLv2 or later
@@ -20,7 +20,7 @@ namespace f12_profiler {
 
 	define( 'F12_PROFILER_NAME', 'F12-Profiler' );
 	define( 'F12_PROFILER_PACKAGE', 'f12_profiler' );
-	define( 'F12_PROFILER_VERSION', '1.3.8' );
+	define( 'F12_PROFILER_VERSION', '1.3.9' );
 	define( 'F12_PROFILER_MINIMUM_WP_VERSION', '4.9' );
 	define( 'F12_PROFILER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'F12_PROFILER_MINIMUM_PHP_VERSION', '7.0' );

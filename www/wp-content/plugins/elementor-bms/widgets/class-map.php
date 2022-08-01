@@ -37,7 +37,7 @@ class Map extends Widget_Base
 		parent::__construct($data, $args);
 
 		wp_register_style('map', plugins_url('/assets/css/map.css', ELEMENTOR_BMS), array(), '1.0.0');
-		wp_register_script('map', plugins_url('/assets/js/map.js', ELEMENTOR_BMS));
+		wp_register_script('map', plugins_url('/assets/js/map.js', ELEMENTOR_BMS), array('wp-api'));
 		wp_register_script('leaflet-conditionalLayer', plugins_url('/assets/js/leaflet.conditionalLayer.js', ELEMENTOR_BMS));
 		wp_register_script('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.js");
 		wp_register_style('leaflet', "https://unpkg.com/leaflet@1.3.1/dist/leaflet.css");
@@ -158,6 +158,33 @@ class Map extends Widget_Base
 			]
 		);
 
+		$this->add_control(
+			'points_url',
+			array(
+				'label'   => __('Points URL', 'elementor-bms'),
+				'type'    => Controls_Manager::TEXT,
+				'default' => __('https://api.openium.fr/api/v1/app/applications/01d5f39f-c306-11e7-962c-020000fa5665/points', 'elementor-bms'),
+			)
+		);
+
+		$this->add_control(
+			'types_url',
+			array(
+				'label'   => __('Types URL', 'elementor-bms'),
+				'type'    => Controls_Manager::TEXT,
+				'default' => __('https://api.openium.fr/api/v1/app/applications/01d5f39f-c306-11e7-962c-020000fa5665/types', 'elementor-bms'),
+			)
+		);
+
+		$this->add_control(
+			'trail_url',
+			array(
+				'label'   => __('Trail URL', 'elementor-bms'),
+				'type'    => Controls_Manager::TEXT,
+				'default' => __('https://api.openium.fr/uploads/gpx/75033b1c-c30b-11e7-962c-020000fa5665.gpx', 'elementor-bms'),
+			)
+		);
+
 		$this->end_controls_section();
 	}
 
@@ -176,6 +203,21 @@ class Map extends Widget_Base
 		// $pointsUrl = "./wp-content/plugins/elementor-bms/assets/js/points-short.json";
 		$pointsUrl = "./wp-content/plugins/elementor-bms/assets/js/points-all.json";
 
-		echo '<div id="map" data-points="' . $pointsUrl . '"></div>';
+		echo '<div id="map" data-points="' . $settings["points_url"] . '" data-types="' . $settings['types_url'] . '" data-trail="' . $settings['trail_url'] . '"></div>';
+	}
+
+	/**
+	 * Render list widget output in the editor.
+	 *
+	 * Written as a Backbone JavaScript template and used to generate the live preview.
+	 *
+	 * @since 1.0.0
+	 * @access protected
+	 */
+	protected function content_template()
+	{
+?>
+		<p>Map</p>
+<?php
 	}
 }
