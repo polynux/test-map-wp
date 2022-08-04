@@ -1,0 +1,3 @@
+[submodule "www/wp-content/plugins/elementor-bms"]
+	path = www/wp-content/plugins/elementor-bms
+	url = git@git.bm-services.com:internal/wp-module-elementor-bms
