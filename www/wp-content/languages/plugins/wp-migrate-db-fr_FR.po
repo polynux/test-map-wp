@@ -1,15 +1,26 @@
-# Translation of Plugins - WP Migrate &#8211; WordPress Migration Made Easy - Stable (latest release) in French (France)
-# This file is distributed under the same license as the Plugins - WP Migrate &#8211; WordPress Migration Made Easy - Stable (latest release) package.
+# Translation of Plugins - WP Migrate Lite &#8211; WordPress Migration Made Easy - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - WP Migrate Lite &#8211; WordPress Migration Made Easy - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-05 15:35:59+0000\n"
+"PO-Revision-Date: 2022-08-05 09:15:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: fr\n"
-"Project-Id-Version: Plugins - WP Migrate &#8211; WordPress Migration Made Easy - Stable (latest release)\n"
+"Project-Id-Version: Plugins - WP Migrate Lite &#8211; WordPress Migration Made Easy - Stable (latest release)\n"
+
+#: class/Common/Plugin/Menu.php:95 class/Common/Plugin/Menu.php:134
+#: class/Common/Plugin/PluginManagerBase.php:374 php-checker.php:37
+#: php-checker.php:66
+msgid "WP Migrate"
+msgstr "WP Migrate"
+
+#. Plugin Name of the plugin
+#: php-checker.php:33 php-checker.php:66
+msgid "WP Migrate Lite"
+msgstr "WP Migrate Lite"
 
 #: class/Free/Plugin/PluginManager.php:80
 msgid "Migrate"
@@ -262,6 +273,10 @@ msgstr "Impossible de se connecter par HTTPS. Vous pourriez essayer le HTTP à l
 #: class/Common/Plugin/Assets.php:79
 msgid "Hey, this is the first time activating your license, nice! Your migrations are about to get awesome! If you haven’t already, you should check out our <a href=\"%1$s\" target=\"_blank\">Quick Start Guide</a> and <a href=\"%2$s\" target=\"_blank\">Videos</a>. If you run into any trouble at all, use the <strong>Help tab</strong> above to submit a support request."
 msgstr "Hé, c’est la première fois que vous activez votre licence, bravo ! Vos migrations sont sur le point de devenir géniales ! Si vous ne l avez pas encore fait, vous devriez consulter nos <a href=\"%1$s\" target=\"_blank\">Guide de démarrage rapide</a> et <a href=\"%2$s\" target=\"_blank\">Vidéos</a>. Si vous rencontrez le moindre problème, utilisez l’onglet <strong>Aide</strong> ci-dessus pour envoyer une demande de support."
+
+#: class/Common/Plugin/Assets.php:78
+msgid "Welcome to WP Migrate! &#127881;"
+msgstr "Bienvenue sur WP Migrate DB Pro !"
 
 #: class/Common/Plugin/Assets.php:77
 msgid "The migration has been stopped and all temporary files and data have been cleaned up."
