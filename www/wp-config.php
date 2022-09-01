@@ -23,6 +23,7 @@
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 <<<<<<< HEAD
+<<<<<<< HEAD
 require_once( dirname( __FILE__ ) . '/wp-config.php' );
 =======
 define( 'DB_NAME', 'sandbox' );
@@ -36,6 +37,9 @@ define( 'DB_PASSWORD', 'pfkvnh0705' );
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
 >>>>>>> bec4bcf7... update all
+=======
+require_once( dirname( __FILE__ ) . '/wp-config-local.php' );
+>>>>>>> 637b52c4... add plugins and remove password
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -89,10 +93,9 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
-
+define( 'DISALLOW_FILE_EDIT', true );
 /* Add any custom values between this line and the "stop editing" line. */
 
-define( 'WP_DEBUG', false );
 define( 'DISABLE_WP_CRON', true );//desactive wp_cron
 define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );//desactive les emails
 
